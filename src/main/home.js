@@ -30,7 +30,7 @@ export const AboutMe = () =>{
             <Text
             color={useColorModeValue('blackAlpha.700','white')} 
             fontSize={{base:"12",sm:"12",md:"13",lg:"15",xl:"15"}} fontFamily='Calibri Light' shadow="2xl" borderRadius="3xl" maxWidth="500" textAlign="center" margin="10">
-            "Just a man who interested in low level stuff. Have some experience with pwning, reverse engineering and malware analyst. Besides playing CTF and self-taught programing, I’m also looking to join an InfoSec company/team to gain real world experience."
+            Just a man who is interested in low-level stuff. Have some experience with pwning, reverse engineering, and malware analysis. Besides playing CTF and self-taught programming, I’m also looking to join an InfoSec company/team to gain real-world experience.
             </Text>
         </Flex>
     )
