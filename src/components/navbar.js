@@ -123,7 +123,7 @@ const Inner1 = () =>{
                       }}
                       colorScheme='rgba(52, 52, 52, 0.2)'
                     onClick={()=>{
-                        window.location.href = "https://www.reddit.com/user/lenghia143"
+                      window.open("https://www.reddit.com/user/lenghia143")
                     }}/>
                     </ChakraBox>
                     <ChakraBox
@@ -138,7 +138,7 @@ const Inner1 = () =>{
                       }}
                       colorScheme='rgba(52, 52, 52, 0.2)'
                     onClick={()=>{
-                        window.location.href = "https://twitter.com/0ji54n"
+                      window.open("https://twitter.com/0ji54n")
                     }}/>
                     </ChakraBox>
                     <ChakraBox
@@ -153,7 +153,7 @@ const Inner1 = () =>{
                       }}
                       colorScheme='rgba(52, 52, 52, 0.2)'
                     onClick={()=>{
-                        window.location.href = "https://github.com/0ji54n/"
+                      window.open("https://github.com/0ji54n/")
                     }}/>
                     </ChakraBox>
                     <ChakraBox
@@ -168,7 +168,7 @@ const Inner1 = () =>{
                       }}
                       colorScheme='rgba(52, 52, 52, 0.2)'
                     onClick={()=>{
-                        window.location.href = "https://www.facebook.com/q8.LeNghia/"
+                      window.open("https://www.facebook.com/q8.LeNghia/")
                     }}/>
                     </ChakraBox>
                     <ChakraBox
@@ -183,7 +183,7 @@ const Inner1 = () =>{
                       }}
                       colorScheme='rgba(52, 52, 52, 0.2)'
                     onClick={()=>{
-                        window.location.href = "https://www.pinterest.jp/lexuannghia143/"
+                      window.open("https://www.pinterest.jp/lexuannghia143/")
                     }}/>
                     </ChakraBox>
                     </SimpleGrid>
