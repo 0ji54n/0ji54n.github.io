@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/0ji54n.github.io/static/js/main.87efbf99.js",
-    "static/js/787.f587e8d5.chunk.js": "/0ji54n.github.io/static/js/787.f587e8d5.chunk.js",
-    "static/media/sound.mp3": "/0ji54n.github.io/static/media/sound.579ac578330db87a1b02.mp3",
-    "static/media/almondblossom.jpg": "/0ji54n.github.io/static/media/almondblossom.4e6eae2fdc5432a0f1be.jpg",
-    "static/media/thumbnail.jpg": "/0ji54n.github.io/static/media/thumbnail.66686dbcdb2edd6c5ffc.jpg",
-    "static/media/terminalbarsharp.png": "/0ji54n.github.io/static/media/terminalbarsharp.90743019aaebeafb3d74.png",
-    "static/media/profile.png": "/0ji54n.github.io/static/media/profile.cdccea5ac68458b4f595.png",
-    "index.html": "/0ji54n.github.io/index.html",
-    "main.87efbf99.js.map": "/0ji54n.github.io/static/js/main.87efbf99.js.map",
-    "787.f587e8d5.chunk.js.map": "/0ji54n.github.io/static/js/787.f587e8d5.chunk.js.map"
+    "main.js": "/blog/static/js/main.e47eaf97.js",
+    "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
+    "static/media/sound.mp3": "/blog/static/media/sound.579ac578330db87a1b02.mp3",
+    "static/media/almondblossom.jpg": "/blog/static/media/almondblossom.4e6eae2fdc5432a0f1be.jpg",
+    "static/media/thumbnail.jpg": "/blog/static/media/thumbnail.66686dbcdb2edd6c5ffc.jpg",
+    "static/media/terminalbarsharp.png": "/blog/static/media/terminalbarsharp.90743019aaebeafb3d74.png",
+    "static/media/profile.png": "/blog/static/media/profile.cdccea5ac68458b4f595.png",
+    "index.html": "/blog/index.html",
+    "main.e47eaf97.js.map": "/blog/static/js/main.e47eaf97.js.map",
+    "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.87efbf99.js"
+    "static/js/main.e47eaf97.js"
   ]
 }
