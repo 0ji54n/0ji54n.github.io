@@ -93,6 +93,7 @@ const Dolphin = (props) => {
                             else if (item.name.toLowerCase().includes(inputText.toLowerCase())){
                                 return item;
                             }    
+                            return false;
                         }).map((item, index) => (
                             <Box margin="10" key={index}>
                             <Link to={item.link}>
