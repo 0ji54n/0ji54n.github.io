@@ -51,7 +51,7 @@ const Content = () =>{
             we play another game? </Code> 
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')}>
-            Usually, the first challenge of flareon's difficulty will always be much easier than the rest. Or in another word, the actual fun just begins from now on.</Text> 
+            Usually, the first challenge of flareon will always be much easier than the rest. Or in another word, the actual fun just begins from now on.</Text> 
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')} marginTop="10">
             <Highlight query="flare" styles={{color:"green.400"}}>
@@ -68,7 +68,7 @@ const Content = () =>{
             <Highlight query="PixelPoker" styles={{color:"yellow.500"}}>The noisy area is the play zone, when we move a cursor inside, two values besides the game title "PixelPoker" also change as well. So I guess that the 2 values are x and y. In addition, we have 10 tries, if non of them are the correct pixel the game will close.</Highlight>
             </Text>
             <Text fontFamily="Hack"
-            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">But, how do we find the correct pixel? Let's open dbg and see what's going on. Anyways, the file is PE32 so we must use x32dbg instead of 64.</Text>   
+            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">But how do we find the correct pixel? Let's open dbg and see what's going on. Anyways the file is PE32 so we must use x32dbg instead of 64.</Text>   
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')} marginTop="10">
             <Highlight query="FLARE-On" styles={{color:"red.500"}}>
@@ -77,7 +77,7 @@ const Content = () =>{
             </Text>
             <Img justifySelf="center" src={stringref} alt="stringref" marginTop="10"/>
             <Text fontFamily="Hack"
-            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">I set 2 breakpoints at 401477 and 40148C which the mov dwords "FLARE-ON" and "E-On" to eax. Now run the binary.</Text>
+            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">I set 2 breakpoints at 401477 and 40148C which mov dwords "FLARE-ON" and "E-On" to eax. Now run the binary.</Text>
             <Img justifySelf="center" src={debugx} alt="debugx" marginTop="10"/>
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')} marginTop="10">Click random pixel (6,4), and reach the first breakpoint, as we expected it mov "FLARE-On" to eax, but what happens next is interesting.</Text>
