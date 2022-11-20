@@ -85,7 +85,7 @@ const Content = () =>{
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
-            Now just run the local web server and try to type it in the board. I use http-server which is an npm package that can be installed with npm install http-server. Go to the folder and run http-server, the server will be set up on localhost with a specified port.
+            Now just run the local web server and try to type it in the board. I use http-server which is an npm package that can be installed with npm install http-server. Go to the folder and run the command, the server will be set up on localhost with a specified port.
             </Text>
             <Text fontFamily="Hack"
             marginTop="10"
