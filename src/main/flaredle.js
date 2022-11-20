@@ -1,5 +1,5 @@
 import React from "react";
-import { Heading,Flex,useColorModeValue,Text, Img,Box,Grid,Code,Highlight,chakra, shouldForwardProp} from "@chakra-ui/react";
+import { Heading,Flex,useColorModeValue,Text, Img,Grid,Code,Highlight,chakra, shouldForwardProp} from "@chakra-ui/react";
 import extract from "../media/flaredle/extract.jpg"
 import html from "../media/flaredle/html source.png"
 import script from "../media/flaredle/script source.png"

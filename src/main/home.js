@@ -232,7 +232,7 @@ export class Home extends React.Component {
                 marginTop: 0, 
                 opacity: 1 }}
             exit={{
-                marginLeft: 20}}>
+                marginTop: 20}}>
                 <Name/>
                 <AboutMe/>
                 <Neofetch/>
