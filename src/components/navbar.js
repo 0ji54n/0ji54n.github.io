@@ -9,7 +9,7 @@ import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
 import { MusicMinimize } from "./musicterminal";
 import { FaRedditAlien, FaPinterest } from 'react-icons/fa';
-import { motion, isValidMotionProp } from "framer-motion";
+import { motion, isValidMotionProp,useTransform, useScroll } from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -207,11 +207,14 @@ const Inner1 = () =>{
 export const VeryBottom = () =>{
     return (
         <Grid>
-              <Box h="40px" bgColor="#1E222A"
+              <ChakraBox
+              zIndex="2"
               marginTop="5"
+              h="40px" bgColor="#1E222A"
               borderRadius="md"
               boxShadow="dark-lg"
               justifySelf="center"
+              position="fixed"
               w={{
                   base: "50%%",
                   sm:"50%%",
@@ -220,7 +223,7 @@ export const VeryBottom = () =>{
                   xl: "50%"
               }}>
                   <Inner1/>
-              </Box>
+              </ChakraBox>
         </Grid>
     );
 };

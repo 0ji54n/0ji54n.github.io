@@ -11,13 +11,8 @@ const ChakraBox = chakra(motion.div, {
 export default function Avt() {
     return (
         <Flex justifyContent="center"
-        marginTop={{
-          base:"10",
-          sm:"10",
-          md:"10",
-          lg:"20",
-          xl:"20"
-        }}
+        zIndex="1"
+        marginTop="40"
         marginLeft={{
             base:"none",
             sm:"none",

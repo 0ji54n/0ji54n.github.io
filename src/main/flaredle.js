@@ -1,11 +1,13 @@
 import React from "react";
-import { Heading,Flex,useColorModeValue,Text, Img,Grid,Code,Highlight,chakra, shouldForwardProp} from "@chakra-ui/react";
+import {Button,Heading,Flex,useColorModeValue,Text, Img,Grid,Code,Highlight,chakra, shouldForwardProp} from "@chakra-ui/react";
 import extract from "../media/flaredle/extract.jpg"
+import { Link } from "react-router-dom";
 import html from "../media/flaredle/html source.png"
 import script from "../media/flaredle/script source.png"
 import word from "../media/flaredle/word source.png"
 import webserver from "../media/flaredle/webserver.jpg"
 import flag from "../media/flaredle/flag.jpg"
+import {FaAngleDoubleLeft,FaAngleDoubleRight} from "react-icons/fa";
 import { motion, isValidMotionProp } from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -18,7 +20,7 @@ const Title = () =>{
         <Heading
         fontFamily="Anurati"
         marginTop="20"
-        fontSize="70"
+        fontSize="60"
         color={useColorModeValue('blackAlpha.700','white')}
         >
             FLAREDLE
@@ -33,9 +35,15 @@ const Content = () =>{
         justifyContent="center"
         marginTop="10">
             <Grid
-            w="40%">
+            w={{
+                base:"80%",
+                sm:"80%",
+                md:"70%",
+                lg:"60%",
+                xl:"60%"
+            }}>
             <Code colorScheme="yellow" marginTop="10" marginBottom="20"
-            maxWidth="60%"
+            maxWidth="90%"
             justifySelf="center"
             textAlign="center" as="i" >You probably won't win. Maybe you're like us and spent the year playing Wordle. We made our own version that is too
             hard to beat without cheating. </Code>
@@ -70,7 +78,7 @@ const Content = () =>{
             Guess the CSS is not interesting, so just go straight to script.js.
             </Highlight>
             </Text>
-            <Img justifySelf="center" src={script} alt="html" marginTop="10"/>
+            <Img justifySelf="center" src={script} alt="script" marginTop="10"/>
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
@@ -78,7 +86,7 @@ const Content = () =>{
             By reading the source, we know that there're 6 times to guess the correct word that be imported from words.js, the correct word length should be 21, and CORRECTGUESS is set to 57 which means the rightGuessString will be WORDS[57]
             </Highlight>
             </Text>
-            <Img justifySelf="center" src={word} alt="html" marginTop="10"/>
+            <Img justifySelf="center" src={word} alt="word" marginTop="10"/>
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
@@ -89,29 +97,49 @@ const Content = () =>{
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
-            Now just run the local web server and try to type it in the board. I use http-server which is an npm package that can be installed with npm install http-server. Go to the folder and run the command, the server will be set up on localhost with a specified port.
+            Now just run the local web server and try to type it in the board. I use http-server which is an npm package that can be installed with {<Code fontFamily="hack" >npm install http-server</Code>}. Go to the folder and run the command, the server will be set up on localhost with a specified port.
             </Text>
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
             The site looks like this.
             </Text>
-            <Img justifySelf="center" src={webserver} alt="html" marginTop="10"/>
+            <Img justifySelf="center" src={webserver} alt="webserver" marginTop="10"/>
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
             Type in 'flareonisallaboutcats' and we get:
             </Text>
-            <Img justifySelf="center" src={flag} alt="html" marginTop="10"/>
+            <Img justifySelf="center" src={flag} alt="flag" marginTop="10"/>
             <Text fontFamily="Hack"
             marginTop="10"
             color={useColorModeValue('blackAlpha.700','white')}>
             ...On the screen top-right and it's our first flag.
             </Text>
-            <Code colorScheme="green" marginTop="10" marginBottom="20"
+            <Code colorScheme="green" marginTop="10"
             maxWidth="60%"
             justifySelf="center"
             textAlign="center" >flareonisallaboutcats@flare-on.com</Code>
+            <Flex justifyContent="space-between">
+            <Link to="../works/flareon9/readme">
+            <Button marginTop="10"
+            shadow="dark-lg"
+            leftIcon={<FaAngleDoubleLeft/>}   
+            marginBottom="10">
+                <Text
+                color={useColorModeValue('blackAlpha.700','white')}>About FlareOn</Text>
+            </Button>
+            </Link>
+            <Link to="../works/flareon9/02">
+            <Button marginTop="10"
+            shadow="dark-lg"
+            leftIcon={<FaAngleDoubleRight/>}   
+            marginBottom="10">
+                <Text
+                color={useColorModeValue('blackAlpha.700','white')}>Pixel Poker</Text>
+            </Button>
+            </Link>
+            </Flex>
             </Grid>
         </Flex>
     )

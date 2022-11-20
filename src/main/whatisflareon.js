@@ -1,6 +1,11 @@
 import React from "react";
-import {Flex,Grid,GridItem,Img, Text, Highlight,Box} from "@chakra-ui/react"
+import {Flex,Grid,GridItem,Img, Text, Highlight,Box,chakra, shouldForwardProp} from "@chakra-ui/react"
 import terminalbar from "../media/terminalbarsharp.png"
+import { motion, isValidMotionProp } from "framer-motion";
+const ChakraBox = chakra(motion.div, {
+    shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
+});
+
 
 const DolphinTer = () => {
     return (
@@ -66,6 +71,22 @@ const Dolphin = () => {
 
 export class WhatIsFlareOn extends React.Component {
     render(){
-        return [<DolphinTer/>,<Dolphin/>]
+        return(
+        <ChakraBox
+        transition={{
+           duration: 1 
+        }}
+        initial={{ 
+            marginTop: 20,
+            opacity: 0 }}
+        animate={{
+            marginTop: 0, 
+            opacity: 1 }}
+        exit={{
+            marginTop: 20}}> 
+        <DolphinTer/>
+        <Dolphin/>
+        </ChakraBox>
+        )
     };
 };

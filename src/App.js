@@ -12,8 +12,9 @@ import {Gallery} from "./main/gallery"
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { FlareOn9 } from './main/flareon9.js';
 import { NewFolder } from './main/newfolder.js';
-import {WhatIsFlareOn} from "./main/whatisflareon"
-import {Flaredle} from "./main/flaredle"
+import {WhatIsFlareOn} from "./main/whatisflareon";
+import {Flaredle} from "./main/flaredle";
+import {PixelPoker} from "./main/pixelpoker"
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="works/newfolder" element={<NewFolder/>}/>  
           <Route path="works/flareon9/readme" element={<WhatIsFlareOn/>}/> 
           <Route path="works/flareon9/01" element={<Flaredle/>}/>
+          <Route path="works/flareon9/02" element={<PixelPoker/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>
