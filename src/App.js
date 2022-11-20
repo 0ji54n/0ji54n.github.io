@@ -13,6 +13,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { FlareOn9 } from './main/flareon9.js';
 import { NewFolder } from './main/newfolder.js';
 import {WhatIsFlareOn} from "./main/whatisflareon"
+import {Flaredle} from "./main/flaredle"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="works/flareon9" element={<FlareOn9/>}/>  
           <Route path="works/newfolder" element={<NewFolder/>}/>  
           <Route path="works/flareon9/readme" element={<WhatIsFlareOn/>}/> 
+          <Route path="works/flareon9/01" element={<Flaredle/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>
