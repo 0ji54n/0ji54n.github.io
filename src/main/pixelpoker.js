@@ -51,7 +51,7 @@ const Content = () =>{
             we play another game? </Code> 
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')}>
-            Normally, the first challenge of flareon's difficulty will always be much easier than the rest. Or in another word, the actual fun just begins from now on.</Text> 
+            Usually, the first challenge of flareon's difficulty will always be much easier than the rest. Or in another word, the actual fun just begins from now on.</Text> 
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')} marginTop="10">
             <Highlight query="flare" styles={{color:"green.400"}}>
