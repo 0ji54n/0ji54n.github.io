@@ -41,7 +41,7 @@ const Content = () =>{
             hard to beat without cheating. </Code>
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')}>
-            This's the very first challenge of FlareOn9. You could just do it on the site they provided or download it and run it on your own web server. In this case, the server has been closed and the only way to do the challenge is to download and run it locally.
+            This's the very first challenge of FlareOn9. You could just do it on the site they provided or download and run it on your own web server. In this case, the server has been closed and the only way to do the challenge is downloading and run it locally.
             </Text>
             <Text fontFamily="Hack"
             marginTop="10"
