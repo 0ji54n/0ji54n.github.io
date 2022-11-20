@@ -1,11 +1,15 @@
 import React from "react";
-import { Heading,Flex,useColorModeValue,Text, Img,Box,Grid,Code,Highlight} from "@chakra-ui/react";
+import { Heading,Flex,useColorModeValue,Text, Img,Box,Grid,Code,Highlight,chakra, shouldForwardProp} from "@chakra-ui/react";
 import extract from "../media/flaredle/extract.jpg"
 import html from "../media/flaredle/html source.png"
 import script from "../media/flaredle/script source.png"
 import word from "../media/flaredle/word source.png"
 import webserver from "../media/flaredle/webserver.jpg"
 import flag from "../media/flaredle/flag.jpg"
+import { motion, isValidMotionProp } from "framer-motion";
+const ChakraBox = chakra(motion.div, {
+    shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 const Title = () =>{
     return(
@@ -116,10 +120,21 @@ const Content = () =>{
 export class Flaredle extends React.Component{
     render(){
         return (
-            <Box>
+            <ChakraBox
+            transition={{
+               duration: 1 
+            }}
+            initial={{ 
+                marginTop: 20,
+                opacity: 0 }}
+            animate={{
+                marginTop: 0, 
+                opacity: 1 }}
+            exit={{
+                marginTop: 20}}>
             <Title/>
             <Content/>
-            </Box>
+            </ChakraBox>
         )
     }
 }
