@@ -98,6 +98,10 @@ const Dolphin = (props) => {
                             <Box margin="10" key={index}>
                             <Link to={item.link}>
                                 <IconButton
+                                _hover={{
+                                    bgColor : 'rgba(52, 52, 52, 0.2)'
+                                  }}
+                                  colorScheme='rgba(52, 52, 52, 0.2)'
                                 boxSize="20"
                                 variant="ghost"
                                 icon={<AiFillFolder size="80"/>}/>

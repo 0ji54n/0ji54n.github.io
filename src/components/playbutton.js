@@ -100,6 +100,10 @@ const Player = () => {
   const StopButton = () => {
     return (
       <IconButton
+      _hover={{
+        bgColor : 'rgba(52, 52, 52, 0.2)'
+      }}
+      colorScheme='rgba(52, 52, 52, 0.2)'
       borderRadius="full"
       boxSize="4"
       variant="ghost"
@@ -123,6 +127,10 @@ const Player = () => {
   const PlayButton = () => {
     return (
       <IconButton
+      _hover={{
+        bgColor : 'rgba(52, 52, 52, 0.2)'
+      }}
+      colorScheme='rgba(52, 52, 52, 0.2)'
       boxSize="4"
       borderRadius="full"
       variant="ghost"
@@ -144,6 +152,10 @@ const Player = () => {
 const ResetButton = () => {
   return(
     <IconButton
+    _hover={{
+      bgColor : 'rgba(52, 52, 52, 0.2)'
+    }}
+    colorScheme='rgba(52, 52, 52, 0.2)'
     borderRadius="full"
     boxSize="4"
     variant="ghost"
@@ -160,6 +172,10 @@ const ResetButton = () => {
 const NextButton = () =>{
   return (
     <IconButton
+    _hover={{
+      bgColor : 'rgba(52, 52, 52, 0.2)'
+    }}
+    colorScheme='rgba(52, 52, 52, 0.2)'
     borderRadius="full"
     boxSize="4"
     variant="ghost"
@@ -185,6 +201,10 @@ const NextButton = () =>{
 const PrevButton = () =>{
   return (
     <IconButton
+    _hover={{
+      bgColor : 'rgba(52, 52, 52, 0.2)'
+    }}
+    colorScheme='rgba(52, 52, 52, 0.2)'
     borderRadius="full"
     boxSize="4"
     variant="ghost"

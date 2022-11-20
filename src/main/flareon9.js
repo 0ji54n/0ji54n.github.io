@@ -132,6 +132,10 @@ const Dolphin = () => {
                         <Box margin="10" key={index}>
                             <Link to={item.link}>
                                 <IconButton
+                                _hover={{
+                                    bgColor : 'rgba(52, 52, 52, 0.2)'
+                                  }}
+                                  colorScheme='rgba(52, 52, 52, 0.2)'
                                 boxSize="20"
                                 variant="ghost"
                                 icon={item.name==="WhatisFlareOn.txt"?<AiFillFileText size="80"/>:<AiFillFolder size="80"/>}/>
