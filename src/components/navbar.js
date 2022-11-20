@@ -1,4 +1,4 @@
-import { Grid, Box, GridItem, IconButton, Flex, Tooltip, SimpleGrid, chakra, shouldForwardProp} from "@chakra-ui/react";
+import { Grid, GridItem, IconButton, Flex, Tooltip, SimpleGrid, chakra, shouldForwardProp} from "@chakra-ui/react";
 import React from "react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import Avt from "./avt"
@@ -9,7 +9,7 @@ import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
 import { MusicMinimize } from "./musicterminal";
 import { FaRedditAlien, FaPinterest } from 'react-icons/fa';
-import { motion, isValidMotionProp,useTransform, useScroll } from "framer-motion";
+import { motion, isValidMotionProp} from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
