@@ -96,7 +96,7 @@ const Content = () =>{
             <Highlight query="401484" styles={{color:"blue.500"}}>401484: cmp edi, edx: the edx is the remainder value of div esi which is 0x5F, and guess what is the value of edi? Yes, it's the x value of the pixel I just clicked (6). So the value of x must be 0x5F(95).</Highlight>
             </Text>
             <Text fontFamily="Hack"
-            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">Look a little bit down and we can see it does the same compare to check y as well. Because if the x check is not passed we can reach the next compare, so run the binary again and click the correct x.</Text>
+            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">Look a little bit down and we can see it does the same compare to check y as well. Because if the x check is not passed then we won't be able to reach the next compare, so run the binary again and click the correct x.</Text>
             <Img justifySelf="center" src={checky} alt="checky" marginTop="10"/>
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')} marginTop="10">
@@ -105,7 +105,7 @@ const Content = () =>{
             </Highlight>
             </Text>
             <Text fontFamily="Hack"
-            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">Run the binary last time with x=95, and y=313 without a debugger and the flag appears.
+            color={useColorModeValue('blackAlpha.700','white')} marginTop="10">Run the binary one last time with x=95, and y=313 without a debugger and the flag appears.
             </Text>
             <Img justifySelf="center" src={winner} alt="winner" marginTop="10"/>
             <Code colorScheme="green" marginTop="10"
