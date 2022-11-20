@@ -30,6 +30,11 @@ const Content = () =>{
         marginTop="10">
             <Grid
             w="40%">
+            <Code colorScheme="yellow" marginTop="10" marginBottom="20"
+            maxWidth="60%"
+            justifySelf="center"
+            textAlign="center" as="i" >You probably won't win. Maybe you're like us and spent the year playing Wordle. We made our own version that is too
+            hard to beat without cheating. </Code>
             <Text fontFamily="Hack"
             color={useColorModeValue('blackAlpha.700','white')}>
             This's the very first challenge of FlareOn9. You could just do it on the site they provided or download it and run it on your own web server. In this case, the server has been closed and the only way to do the challenge is to download and run it locally.
