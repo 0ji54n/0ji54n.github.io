@@ -153,6 +153,11 @@ const Dolphin = () => {
 
 export class FlareOn9 extends React.Component {
     render(){
-        return [<DolphinTer key="0"/>,<Dolphin key="1"/>]
+        return(
+            <Box>
+                <DolphinTer/>
+                <Dolphin/>
+            </Box>
+        )
     };
 };

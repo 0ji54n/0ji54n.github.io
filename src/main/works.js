@@ -119,6 +119,11 @@ const Dolphin = (props) => {
 
 export class Works extends React.Component {
     render(){
-        return [<DolphinTer key="WorkDolphinTerminal"/>,<Dolphin key="WorkDolphin"/>]
+        return(
+            <Box>
+                <DolphinTer/>
+                <Dolphin/>
+            </Box>
+        )
     };
 };

@@ -7,6 +7,7 @@ import script from "../media/flaredle/script source.png"
 import word from "../media/flaredle/word source.png"
 import webserver from "../media/flaredle/webserver.jpg"
 import flag from "../media/flaredle/flag.jpg"
+import GoToTop from "../components/gototop";
 import {FaAngleDoubleLeft,FaAngleDoubleRight} from "react-icons/fa";
 import { motion, isValidMotionProp } from "framer-motion";
 const ChakraBox = chakra(motion.div, {
@@ -160,6 +161,7 @@ export class Flaredle extends React.Component{
                 opacity: 1 }}
             exit={{
                 marginTop: 20}}>
+            <GoToTop/>
             <Title/>
             <Content/>
             </ChakraBox>

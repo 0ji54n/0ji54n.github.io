@@ -3,6 +3,7 @@ import { Img,Flex, Text, Heading,Grid, GridItem, Highlight,chakra, shouldForward
 import almondblossom from "../media/almondblossom.jpg";
 import terminalbar from "../media/terminalbarsharp.png"
 import { motion, isValidMotionProp } from "framer-motion";
+import GoToTop from "../components/gototop"
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -233,6 +234,7 @@ export class Home extends React.Component {
                 opacity: 1 }}
             exit={{
                 marginTop: 20}}>
+                <GoToTop/>
                 <Name/>
                 <AboutMe/>
                 <Neofetch/>

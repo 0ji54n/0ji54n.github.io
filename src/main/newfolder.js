@@ -1,5 +1,5 @@
 import React from "react";
-import {Flex,Grid,GridItem,SimpleGrid,Img, Text, Highlight,Input} from "@chakra-ui/react"
+import {Flex,Grid,GridItem,SimpleGrid,Img, Text, Highlight,Input,Box} from "@chakra-ui/react"
 import terminalbar from "../media/terminalbarsharp.png"
 
 const DolphinTer = () => {
@@ -73,6 +73,11 @@ const Dolphin = () => {
 
 export class NewFolder extends React.Component {
     render(){
-        return [<DolphinTer/>,<Dolphin/>]
+        return(
+            <Box>
+                <DolphinTer/>
+                <Dolphin/>
+            </Box>
+        )
     };
 };

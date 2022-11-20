@@ -10,6 +10,7 @@ import stringref from "../media/pixelpoker/stringref.jpg"
 import debugx from "../media/pixelpoker/debugx.jpg"
 import checky from "../media/pixelpoker/checky.jpg"
 import winner from "../media/pixelpoker/winner.jpg"
+import GoToTop from "../components/gototop";
 
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -151,6 +152,7 @@ export class PixelPoker extends React.Component{
             exit={{
                 marginTop: 20}}
             >
+            <GoToTop/>
             <Title/>
             <Content/>
             </ChakraBox>

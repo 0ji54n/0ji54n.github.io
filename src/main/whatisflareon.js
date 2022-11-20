@@ -2,6 +2,7 @@ import React from "react";
 import {Flex,Grid,GridItem,Img, Text, Highlight,Box,chakra, shouldForwardProp} from "@chakra-ui/react"
 import terminalbar from "../media/terminalbarsharp.png"
 import { motion, isValidMotionProp } from "framer-motion";
+import GoToTop from "../components/gototop";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -84,6 +85,7 @@ export class WhatIsFlareOn extends React.Component {
             opacity: 1 }}
         exit={{
             marginTop: 20}}> 
+        <GoToTop/>
         <DolphinTer/>
         <Dolphin/>
         </ChakraBox>

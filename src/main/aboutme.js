@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Grid, GridItem, Img, Text, Highlight, SimpleGrid,Box,chakra, shouldForwardProp } from "@chakra-ui/react";
 import terminalbar from "../media/terminalbarsharp.png"
 import { motion, isValidMotionProp } from "framer-motion";
+import GoToTop from "../components/gototop"
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -271,6 +272,7 @@ export class AboutMe extends React.Component {
                 marginTop: 0, 
                 opacity: 1 }}
             exit={{ opacity:0 }}>
+                <GoToTop/>
                 <Txt/>
                 <Skill/>
                 <Bio/>
