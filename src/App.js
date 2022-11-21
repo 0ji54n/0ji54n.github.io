@@ -15,6 +15,7 @@ import { NewFolder } from './main/newfolder.js';
 import {WhatIsFlareOn} from "./main/whatisflareon";
 import {Flaredle} from "./main/flaredle";
 import {PixelPoker} from "./main/pixelpoker"
+import {Magic8Ball} from "./main/magic8ball"
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="works/flareon9/readme" element={<WhatIsFlareOn/>}/> 
           <Route path="works/flareon9/01" element={<Flaredle/>}/>
           <Route path="works/flareon9/02" element={<PixelPoker/>}/>
+          <Route path="works/flareon9/03" element={<Magic8Ball/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>

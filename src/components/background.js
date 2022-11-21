@@ -24,6 +24,9 @@ const components = {
 const theme = extendTheme({
   components,
   styles,
+  fonts:{
+    body: "Hack"
+  }
 });
 
 export default theme;
