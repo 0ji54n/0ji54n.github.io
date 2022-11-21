@@ -141,7 +141,7 @@ const Dolphin = () => {
                                 variant="ghost"
                                 icon={item.name==="WhatisFlareOn.txt"?<AiFillFileText size="80"/>:<AiFillFolder size="80"/>}/>
                             </Link>
-                            <Text fontFamily="Hack" textAlign="center">{item.name}</Text>
+                            <Text fontFamily="Hack">{item.name}</Text>
                         </Box>
                         ))
                         }
