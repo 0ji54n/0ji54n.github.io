@@ -19,15 +19,15 @@ const DolphinTer = () => {
                 lg:"30%",
                 xl:"30%"
             }}
-            templateRows='repeat(4, 1fr)'
+            templateRows='repeat(8, 1fr)'
             templateColumns='repeat(24, 1fr)'>
-                <GridItem colStart="2" colEnd="13"
-                rowStart="2" rowEnd="4">
+                <GridItem colStart="4" colEnd="13"
+                rowStart="5" rowEnd="5">
                     <Img src={terminalbar} alt="terminalbar"
-                    h="100%" w="100%" />
+                    h="80%" w="100%" />
                 </GridItem>
                 <GridItem colStart="14" colEnd="24"
-                rowStart="2" rowEnd="4">
+                rowStart="5" rowEnd="5">
                     <Text fontFamily="Hack" fontSize="14" color="blue.400">
                         <Highlight query="dolphin" styles={{color:"green.500"}}>
                             dolphin works
