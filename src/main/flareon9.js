@@ -45,17 +45,18 @@ const DolphinTer = () => {
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
             <Grid bgColor="#333F50" h={50} border="1px"
             w={{
-                base:"70%",
+                base:"80%",
                 sm:"60%",
                 md:"40%",
                 lg:"30%",
-                xl:"20%"
+                xl:"30%"
             }}
             templateRows='repeat(4, 1fr)'
             templateColumns='repeat(24, 1fr)'>
                 <GridItem colStart="2" colEnd="13"
                 rowStart="2" rowEnd="4">
-                    <Img src={terminalbar} alt="terminalbar" />
+                    <Img src={terminalbar} alt="terminalbar" 
+                    h="100%" w="100%"/>
                 </GridItem>
                 <GridItem colStart="14" colEnd="24"
                 rowStart="2" rowEnd="4">
@@ -78,7 +79,7 @@ const Dolphin = () => {
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
             <Grid bgColor="#333F50" h={{
-                base:1000,
+                base:1050,
                 sm:1000,
                 md:800,
                 lg:550,
@@ -89,7 +90,7 @@ const Dolphin = () => {
                 sm:"90%",
                 md:"80%",
                 lg:"70%",
-                xl:"40%"
+                xl:"50%"
             }}
             templateColumns="repeat(24, 1fr)"
             templateRows="repeat(24, 1fr)">

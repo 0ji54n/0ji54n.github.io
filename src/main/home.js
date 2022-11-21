@@ -40,7 +40,7 @@ export const Neofetch = () => {
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
             <Grid bgColor="#333F50" h={{
-                base:450,
+                base:480,
                 sm:400,
                 md:400,
                 lg:400,

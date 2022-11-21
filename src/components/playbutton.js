@@ -67,7 +67,7 @@ export const MusicTimeLine = () =>{
         <GridItem rowStart="4" rowEnd="11" colStart="11"
         colEnd="23">
             <Text fontFamily="Hack" >NOW PLAYING</Text>
-            <Text fontFamily="Hack">---------------</Text>
+            <Text fontFamily="Hack">-------------</Text>
         </GridItem>
         <GridItem rowStart="11" rowEnd="14"
         colStart="11" colEnd="24">

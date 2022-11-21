@@ -10,7 +10,13 @@ const ChakraBox = chakra(motion.div, {
 const Txt = () => {
     return(
         <Flex justifyContent="center" marginTop = "5">
-        <Grid bgColor="#333F50" h={120} border="1px"
+        <Grid bgColor="#333F50" h={{
+            base:150,
+            sm:120,
+            md:120,
+            lg:120,
+            xl:120
+        }} border="1px"
         templateColumns='repeat(24, 1fr)'
         templateRows='repeat(24, 1fr)'
         w={{
@@ -18,10 +24,10 @@ const Txt = () => {
             sm:"70%",
             md:"40%",
             lg:"40%",
-            xl:"20%"
+            xl:"30%"
         }}>
             <GridItem
-            colStart="2" colEnd="10"
+            colStart="4" colEnd="10"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox
@@ -89,23 +95,23 @@ const Skill = () => {
     return(
         <Flex justifyContent="center" marginTop = "5">
         <Grid bgColor="#333F50" h={{
-            base:170,
+            base:200,
             sm:170,
             md:170,
             lg:150,
             xl:130
         }} border="1px"
         w={{
-            base:"90%",
+            base:"100%",
             sm:"80%",
             md:"50%",
             lg:"50%",
-            xl:"30%"
+            xl:"40%"
         }}
         templateColumns='repeat(24, 1fr)'
         templateRows='repeat(24, 1fr)'>
             <GridItem
-            colStart="2" colEnd="10"
+            colStart="4" colEnd="10"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox
@@ -179,11 +185,11 @@ const Bio = () => {
     return(
         <Flex justifyContent="center" marginTop = "5" marginBottom="2">
         <Grid bgColor="#333F50" h={{
-            base:300,
+            base:350,
             sm:300,
-            md:250,
-            lg:250,
-            xl:250
+            md:300,
+            lg:300,
+            xl:300
         }} border="1px"
         w={{
             base:"90%",
@@ -195,7 +201,7 @@ const Bio = () => {
         templateColumns='repeat(24, 1fr)'
         templateRows='repeat(24, 1fr)'>
             <GridItem
-            colStart="3" colEnd="10"
+            colStart="4" colEnd="10"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox

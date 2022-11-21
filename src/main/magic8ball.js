@@ -22,7 +22,7 @@ const Title = () =>{
         <Heading
         fontFamily="Anurati"
         marginTop="20"
-        fontSize="40"
+        fontSize="30"
         color={useColorModeValue('blackAlpha.700','white')}
         >
             MAGIC EIGHT BALL
@@ -37,7 +37,7 @@ const Content = () =>{
         marginTop="10">
             <Grid
             w={{
-                base:"80%",
+                base:"95%",
                 sm:"80%",
                 md:"70%",
                 lg:"60%",

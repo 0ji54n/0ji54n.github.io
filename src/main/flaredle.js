@@ -37,7 +37,7 @@ const Content = () =>{
         marginTop="10">
             <Grid
             w={{
-                base:"80%",
+                base:"100%",
                 sm:"80%",
                 md:"70%",
                 lg:"60%",
