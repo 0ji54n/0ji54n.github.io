@@ -48,30 +48,30 @@ const Content = () =>{
             justifySelf="center"
             textAlign="center" as="i" >You got a question? Ask the 8 ball! 
             </Code> 
-            <Text color={useColorModeValue('blackAlpha.700','white')}><Highlight query="flare" styles={{color:"green.500"}}>Extract the zip file with the password "flare" again. And this time we get a folder, an exe file, and a bunch of dlls. </Highlight></Text>
+            <Text color={useColorModeValue('blackAlpha.700','white')} fontSize="14"><Highlight query="flare" styles={{color:"green.500"}}>Extract the zip file with the password "flare" again. And this time we get a folder, an exe file, and a bunch of dlls. </Highlight></Text>
             <Img justifySelf="center" src={folder} alt="folder" marginTop="10"/>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}>libjpeg, libpng, libtiff, and libwepp dll files are just libraries for handling these image data formats. Zlib and SDL stand for Simple DirectMedia Layer, which is a library support for game/software development. The assets folder contain picture and fonts that will be used in the exe file. So the only thing we need to analyze is the exe file. Unlike last time, this game allows us to press the arrow button to shake the ball, type the question from the keyboard, and then the random answer will appear in the blue triangle inside the ball.</Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">libjpeg, libpng, libtiff, and libwepp dll files are just libraries for handling these image data formats. Zlib and SDL stand for Simple DirectMedia Layer, which is a library support for game/software development. The assets folder contain picture and fonts that will be used in the exe file. So the only thing we need to analyze is the exe file. Unlike last time, this game allows us to press the arrow button to shake the ball, type the question from the keyboard, and then the random answer will appear in the blue triangle inside the ball.</Text>
             <Img justifySelf="center" src={gamewindows} alt="gamewindows" marginTop="10"/>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}><Highlight query="Press arrow keys to shake the ball" styles={{color:"blue.500"}}>Let's not waste any more time and go debugging. Try to not overthink because this one should still be easy. Go to string reference windows again in x32dbg and set some breakpoints. In this case, I set one at the string "Press arrow keys to shake the ball".</Highlight></Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14"><Highlight query="Press arrow keys to shake the ball" styles={{color:"blue.500"}}>Let's not waste any more time and go debugging. Try to not overthink because this one should still be easy. Go to string reference windows again in x32dbg and set some breakpoints. In this case, I set one at the string "Press arrow keys to shake the ball".</Highlight></Text>
             <Img justifySelf="center" src={pressarrow} alt="pressarrow" marginTop="10"/>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}><Highlight query="gimme flag pls?" styles={{color:"red.500"}}>Look a little bit upper, we see the mov string "gimme flag pls?" to [edi+5C] which looks interesting. That string also is used later with lea eax, [edi+5C] so I decided to jump there.</Highlight></Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14"><Highlight query="gimme flag pls?" styles={{color:"red.500"}}>Look a little bit upper, we see the mov string "gimme flag pls?" to [edi+5C] which looks interesting. That string also is used later with lea eax, [edi+5C] so I decided to jump there.</Highlight></Text>
             <Img justifySelf="center" src={UDLR} alt="UDLR" marginTop="10"/>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}><Highlight query={["U, D, L, R","LLURULDUL","gimme flag pls?"]} styles={{color:"red.500"}}>The binary call a strncmp function take that string and ecx as arguments. But hold on, there's a huge cmp with "U, D, L, R" characters before that. Remember when we can press the arrow key to shake the ball in the binary, and these characters just remind me of "Up, Down, Left, Right". Run the binary until reaching the first compare and we know that our arrow input will be stored at esi, and later is ecx. Then it takes each character in there from left to right to compare with "LLURULDUL", pressing the correct order will take us to the last compare with the string "gimme flag pls?".</Highlight></Text>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}>Run the binary without debugger, press the correct arrow keys, and type the correct input.</Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14"><Highlight query={["U, D, L, R","LLURULDUL","gimme flag pls?"]} styles={{color:"red.500"}}>The binary call a strncmp function take that string and ecx as arguments. But hold on, there's a huge cmp with "U, D, L, R" characters before that. Remember when we can press the arrow key to shake the ball in the binary, and these characters just remind me of "Up, Down, Left, Right". Run the binary until reaching the first compare and we know that our arrow input will be stored at esi, and later is ecx. Then it takes each character in there from left to right to compare with "LLURULDUL", pressing the correct order will take us to the last compare with the string "gimme flag pls?".</Highlight></Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">Run the binary without debugger, press the correct arrow keys, and type the correct input.</Text>
             <Img justifySelf="center" src={winner} alt="winner" marginTop="10"/>
-            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')}>And we get the flag.</Text>
+            <Text  marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">And we get the flag.</Text>
             <Code colorScheme="green" marginTop="10"
             maxWidth="60%"
             justifySelf="center"
             textAlign="center" >U_cRackeD_th1$_maG1cBaLL_!!_@flare-on.com</Code>
-                        <Flex justifyContent="space-between">
+            <Flex justifyContent="space-between">
             <Link to="../works/flareon9/02">
             <Button marginTop="10"
             shadow="dark-lg"
             leftIcon={<FaAngleDoubleLeft/>}   
             marginBottom="10">
                 <Text
-                color={useColorModeValue('blackAlpha.700','white')}>Pixel Poker</Text>
+                color={useColorModeValue('blackAlpha.700','white')} fontSize="14">Pixel Poker</Text>
             </Button>
             </Link>
             <Link to="../works/flareon9/04">
@@ -80,7 +80,7 @@ const Content = () =>{
             leftIcon={<FaAngleDoubleRight/>}   
             marginBottom="10">
                 <Text
-                color={useColorModeValue('blackAlpha.700','white')}>Darn mice</Text>
+                color={useColorModeValue('blackAlpha.700','white')} fontSize="14">Darn mice</Text>
             </Button>
             </Link>
             </Flex>
