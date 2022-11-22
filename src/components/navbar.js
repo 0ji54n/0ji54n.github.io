@@ -25,7 +25,7 @@ const Inner1 = () =>{
             w={{base:"100%"}}
             gridColumn={{
                 base: "span 12",
-                sm: "span 11",//1x1
+                sm: "span 12",//1x1
                 md: "span 13",//2x2
                 lg: "span 12",//3x3
                 xl: "span 4"//3x3
