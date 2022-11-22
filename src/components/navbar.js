@@ -22,9 +22,10 @@ const Inner1 = () =>{
         gap={8}
         >
             <GridItem bgColor="#2C3038" borderRadius="md"
+            w={{base:"100%"}}
             gridColumn={{
                 base: "span 12",
-                sm: "span 12",//1x1
+                sm: "span 11",//1x1
                 md: "span 13",//2x2
                 lg: "span 12",//3x3
                 xl: "span 4"//3x3
@@ -206,25 +207,24 @@ const Inner1 = () =>{
 }
 export const VeryBottom = () =>{
     return (
-        <Grid>
-              <ChakraBox
-              zIndex="2"
-              marginTop="5"
-              h="40px" bgColor="#1E222A"
-              borderRadius="md"
-              boxShadow="dark-lg"
-              justifySelf="center"
-              position="fixed"
-              w={{
-                  base: "50%%",
-                  sm:"50%%",
-                  md: "60%",
-                  lg: "50%",
-                  xl: "50%"
-              }}>
-                  <Inner1/>
-              </ChakraBox>
+      <Flex justifyContent="center">
+        <Grid
+        zIndex="2"
+        marginTop="5"
+        h="40px" bgColor="#1E222A"
+        borderRadius="md"
+        boxShadow="dark-lg"
+        position="fixed"
+        w={{
+            base: "50%%",
+            sm:"50%%",
+            md: "60%",
+            lg: "50%",
+            xl: "50%"
+        }}>
+          <Inner1/>
         </Grid>
+        </Flex>
     );
 };
 
