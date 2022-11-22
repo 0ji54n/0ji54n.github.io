@@ -210,13 +210,7 @@ export const VeryBottom = () =>{
       <Flex justifyContent="center">
         <Grid
         zIndex="2"
-        marginTop={{
-          base:"2",
-          sm:"5",
-          md:"5",
-          lg:"5",
-          xl:"5"
-        }}
+        marginTop="5"
         h="40px" bgColor="#1E222A"
         borderRadius="md"
         boxShadow="dark-lg"
