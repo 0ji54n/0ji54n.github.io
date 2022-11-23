@@ -214,7 +214,13 @@ export const VeryBottom = () =>{
         h="40px" bgColor="#1E222A"
         borderRadius="md"
         boxShadow="dark-lg"
-
+        position={{
+          base:"static",
+          sm:"fixed",
+          md:"fixed",
+          lg:"fixed",
+          xl:"fixed",
+        }}
         w={{
             base: "50%%",
             sm:"50%%",
