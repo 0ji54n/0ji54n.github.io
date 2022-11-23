@@ -1,14 +1,14 @@
-import { Grid, GridItem, IconButton, Flex, Tooltip, SimpleGrid, chakra, shouldForwardProp} from "@chakra-ui/react";
+import { Grid, GridItem, IconButton, Flex, Tooltip, SimpleGrid, chakra, shouldForwardProp,Box} from "@chakra-ui/react";
 import React from "react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import Avt from "./avt"
-import {RealMusicTerminal} from "./musicterminal"
 import { BiHomeCircle, BiUser, BiFolderOpen, BiImage } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
 import { MusicMinimize } from "./musicterminal";
 import { FaRedditAlien, FaPinterest } from 'react-icons/fa';
+import { MusicTimeLine } from "./playbutton";
 import { motion, isValidMotionProp} from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -214,7 +214,7 @@ export const VeryBottom = () =>{
         h="40px" bgColor="#1E222A"
         borderRadius="md"
         boxShadow="dark-lg"
-        position="fixed"
+        position= "fixed"
         w={{
             base: "50%%",
             sm:"50%%",
@@ -231,6 +231,17 @@ export const VeryBottom = () =>{
 
 export class NavigationBar extends React.Component {
     render(){
-        return [<VeryBottom key="0"/>,<Avt key="1"/>,<MusicMinimize key="2"/>,<RealMusicTerminal key="3"/>]
+        return (
+          <Box>
+          <VeryBottom/>
+          <Flex justifyContent="center">
+          <Flex justifyContent="center" marginTop="40" w="40%" h={150}>
+            <Avt/>
+            <MusicTimeLine/>
+          </Flex>
+          </Flex>
+          <MusicMinimize/>
+        </Box>
+        )
     }
 }

@@ -3,7 +3,6 @@ import { IconButton,Flex, useDisclosure, Collapse,useColorModeValue} from "@chak
 import { FiShare2 } from 'react-icons/fi';
 import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import { FaRedditAlien,FaPinterest } from 'react-icons/fa';
-import { MusicTimeLine } from './playbutton';
 
 export const MusicMinimize = () =>{
     const { isOpen, onToggle } = useDisclosure()
@@ -14,7 +13,7 @@ export const MusicMinimize = () =>{
             base:"flex",
             sm:"flex",
             md:"flex",
-            lg:"none",
+            lg:"flex",
             xl:"none"
         }}>
           <IconButton onClick={onToggle}
@@ -32,7 +31,7 @@ export const MusicMinimize = () =>{
                 base:"flex",
                 sm:"flex",
                 md:"flex",
-                lg:"none",
+                lg:"flex",
                 xl:"none"
             }}>
                  <Flex justifyContent="center" gap={4}
@@ -97,27 +96,5 @@ export const MusicMinimize = () =>{
             </Flex>         
         </Collapse>
         </>
-    )
-}
-export default function MusicTerminal() {
-    return (
-        <Flex
-        justifyContent="center">
-            <MusicTimeLine/>
-    </Flex>
-    );
-};
-export const RealMusicTerminal = () =>{
-    return(
-        <Flex
-        display={{
-            base:"none",
-            sm:"none",
-            md:"none",
-            lg:"flex",
-            xl:"flex"
-        }}>
-            <MusicTerminal/>
-        </Flex>
     )
 }

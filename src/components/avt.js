@@ -12,14 +12,7 @@ export default function Avt() {
     return (
         <Flex justifyContent="center"
         zIndex="1"
-        marginTop="40"
-        marginLeft={{
-            base:"none",
-            sm:"none",
-            md: "none",
-            lg: "-500",
-            xl: "-500"
-        }}>
+        >
             <ChakraBox
             animate={{
               rotate: 360,
@@ -29,7 +22,9 @@ export default function Avt() {
               ease: "linear",
               repeat: Infinity,
               delay: 1
-            }}>
+            }}
+            w="100%"
+            h={120}>
               <Img
               boxSize="120" borderRadius="full"
               src={profile} alt="profile"

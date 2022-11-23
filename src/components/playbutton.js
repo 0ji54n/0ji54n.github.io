@@ -35,59 +35,58 @@ export const MusicTimeLine = () =>{
     return ()=> clearInterval(intervalID)
   },[])
   return(
-    <Grid h={150} bgColor="#333F50"
-    w={{
-        base:"70%",
-        sm:"70%",
-        md: "50%",
-        lg: "30%",
-        xl: "20%"  
+    <Flex justifyContent="center" w="50%"
+    marginTop="-2"
+    marginLeft="150"
+    zIndex="1"
+    display={{
+      base:'none',
+      sm:'none',
+      md:'none',
+      lg:'none',
+      xl:'grid'
     }}
-    marginLeft={{
-        base:"none",
-        sm:"none",
-        md: "none",
-        lg: "200",
-        xl: "200"
-    }}
-    marginTop={{
-        base:"50",
-        sm:"50",
-        md: "50",
-        lg: "-140",
-        xl: "-140"
-    }}
-    border="1px"
-    templateColumns="repeat(24, 1fr)"
-    templateRows="repeat(24, 1fr)">
-        <GridItem rowStart="8" rowEnd="20" colStart="2" 
-        colEnd="10">
-            <Img src={thumbnail} alt="thumbnail"/>
-        </GridItem>
-        <GridItem rowStart="4" rowEnd="11" colStart="11"
-        colEnd="23">
-            <Text fontFamily="Hack" >NOW PLAYING</Text>
-            <Text fontFamily="Hack">-------------</Text>
-        </GridItem>
-        <GridItem rowStart="11" rowEnd="14"
-        colStart="11" colEnd="24">
-            <Text fontFamily="Hack" fontSize="13">{SongList[Nameindex.current]}</Text>
-        </GridItem>
-        <GridItem
-        rowStart="14" rowEnd="21"
-        colStart="11" colEnd="24">
-            <Flex justifyContent="center" marginTop="5">
-               <Progress bgColor="gray.500" value={timeLine} h={1} w="90%" max={1140}/>
-            </Flex>
-        </GridItem>
-        <GridItem rowStart="21" rowEnd="24"
-        colStart="11" colEnd="24">
-            <Flex justifyContent="center">
-                <Toggle/>
-            </Flex>
-        </GridItem>
-    </Grid>
+    >
+      <Grid h={140} bgColor="#333F50"
+w={{
+    base:"70%",
+    sm:"70%",
+    md: "50%",
+    lg: "80%",
+    xl: "90%"  
+}}
 
+border="1px"
+templateColumns="repeat(24, 1fr)"
+templateRows="repeat(24, 1fr)">
+    <GridItem rowStart="8" rowEnd="20" colStart="2" 
+    colEnd="10">
+        <Img src={thumbnail} alt="thumbnail"/>
+    </GridItem>
+    <GridItem rowStart="4" rowEnd="11" colStart="11"
+    colEnd="23">
+        <Text fontFamily="Hack" >NOW PLAYING</Text>
+        <Text fontFamily="Hack">-------------</Text>
+    </GridItem>
+    <GridItem rowStart="11" rowEnd="14"
+    colStart="11" colEnd="24">
+        <Text fontFamily="Hack" fontSize="13">{SongList[Nameindex.current]}</Text>
+    </GridItem>
+    <GridItem
+    rowStart="14" rowEnd="21"
+    colStart="11" colEnd="24">
+        <Flex justifyContent="center" marginTop="5">
+           <Progress bgColor="gray.500" value={timeLine} h={1} w="90%" max={1140}/>
+        </Flex>
+    </GridItem>
+    <GridItem rowStart="21" rowEnd="24"
+    colStart="11" colEnd="24">
+        <Flex justifyContent="center">
+            <Toggle/>
+        </Flex>
+    </GridItem>
+    </Grid>
+    </Flex>
   )
 }
 
@@ -240,3 +239,4 @@ class Toggle extends React.Component {
   }
 }
 export default Toggle
+
