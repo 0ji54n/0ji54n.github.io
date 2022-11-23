@@ -241,7 +241,13 @@ export class NavigationBar extends React.Component {
           <Box>
           <VeryBottom/>
           <Flex justifyContent="center">
-          <Flex justifyContent="center" marginTop="40" w="40%" h={150}>
+          <Flex justifyContent="center" marginTop={{
+            base:"20",
+            sm:"40",
+            md:"40",
+            lg:"40",
+            xl:"40"
+          }} w="40%" h={150}>
             <Avt/>
             <MusicTimeLine/>
           </Flex>
