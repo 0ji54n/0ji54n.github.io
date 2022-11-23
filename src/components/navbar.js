@@ -214,13 +214,7 @@ export const VeryBottom = () =>{
         h="40px" bgColor="#1E222A"
         borderRadius="md"
         boxShadow="dark-lg"
-        position={{
-          base:"static",
-          sm:"fixed",
-          md:"fixed",
-          lg:"fixed",
-          xl:"fixed",
-        }}
+        position="fixed"
         w={{
             base: "50%%",
             sm:"50%%",
@@ -241,13 +235,8 @@ export class NavigationBar extends React.Component {
           <Box>
           <VeryBottom/>
           <Flex justifyContent="center">
-          <Flex justifyContent="center" marginTop={{
-            base:"20",
-            sm:"40",
-            md:"40",
-            lg:"40",
-            xl:"40"
-          }} w="40%" h={150}>
+          <Flex justifyContent="center" marginTop="125"
+          w="40%" h={150}>
             <Avt/>
             <MusicTimeLine/>
           </Flex>
