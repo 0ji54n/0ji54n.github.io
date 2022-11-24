@@ -18,6 +18,8 @@ import {PixelPoker} from "./main/pixelpoker"
 import {Magic8Ball} from "./main/magic8ball"
 import { DarnMice } from './main/darnmice.js';
 import {T8} from "./main/t8.js"
+import {Alamode} from "./main/alamode"
+import { Anode } from './main/anode.js';
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
           <Route path="works/flareon9/03" element={<Magic8Ball/>}/>
           <Route path="works/flareon9/04" element={<DarnMice/>}/>
           <Route path="works/flareon9/05" element={<T8/>}/>
+          <Route path="works/flareon9/06" element={<Alamode/>}/>
+          <Route path="works/flareon9/07" element={<Anode/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>

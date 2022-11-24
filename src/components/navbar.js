@@ -41,7 +41,7 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="Home"
+                    <Tooltip label="Home" fontFamily="Calibri Light"
                     borderRadius="full">
                       <Link to="/">
                         <IconButton variant="ghost" icon={<BiHomeCircle/>}
@@ -56,7 +56,7 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="About me"
+                    <Tooltip label="About me" fontFamily="Calibri Light"
                     borderRadius="full">
                     <Link to="about">
                       <IconButton variant="ghost" icon={<BiUser/>}
@@ -71,7 +71,7 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="CTF"
+                    <Tooltip label="CTF" fontFamily="Calibri Light"
                     borderRadius="full">
                     <Link to="works">
                       <IconButton variant="ghost" icon={<BiFolderOpen/>}
@@ -86,7 +86,7 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="..."
+                    <Tooltip label="..." fontFamily="Calibri Light"
                     borderRadius="full">
                     <Link to="gallery">
                       <IconButton variant="ghost" icon={<BiImage/>}

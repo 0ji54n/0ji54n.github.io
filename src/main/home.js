@@ -40,7 +40,7 @@ export const Neofetch = () => {
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
             <Grid bgColor="#333F50" h={{
-                base:480,
+                base:350,
                 sm:400,
                 md:400,
                 lg:400,
@@ -82,12 +82,18 @@ export const Neofetch = () => {
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
                     <Text
-                     fontSize="" marginLeft="5" fontFamily="Hack" color="#597670">neofetch</Text>
+                     fontSize="15" marginLeft="5" fontFamily="Hack" color="#597670">neofetch</Text>
                     </ChakraBox>
                 </GridItem>
                 <GridItem
                 rowStart="6" rowEnd="20"
-                colStart="3" colEnd="9"
+                colStart={{
+                    base:"3",
+                    xl:"4"
+                }} colEnd={{
+                    base:"9",
+                    xl:"8"
+                }}
                 overflow="hidden">
                     <ChakraBox
                     transition={{delay:1.5,
@@ -96,7 +102,7 @@ export const Neofetch = () => {
                     animate={{opacity:1}}>
                     <Flex>
                     <Img src={almondblossom} alt="almondblossom"
-                    width="100%" height="100%"
+                    width="200%" height="100%"
                     objectFit="fill"/>
                     </Flex>
                     </ChakraBox>
@@ -121,70 +127,154 @@ export const Neofetch = () => {
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
                     <Box>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='#F4B183'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }} marginLeft="5" fontFamily="Hack" color='#F4B183'>
                             <Highlight query='TAKO' styles={{ color: '#A9D18E'}}>
                                 0ji54n@TAKO
                             </Highlight>
                     </Text>
-                    <Text marginLeft="5" fontFamily="Hack" color="white">
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"15"
+                    }} marginLeft="5" fontFamily="Hack" color="white">
                     ----------------------
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='OS' styles={{ color: '#A9D18E'}}>
                               OS: Arch Linux
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Host' styles={{ color: '#A9D18E'}}>
                               Host: ASUSTeK COMPUTER INC. ROG Strix G512LI_G512LI
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Kernel' styles={{ color: '#A9D18E'}}>
                               Kernel: 10.0.22000
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Uptime' styles={{ color: '#A9D18E'}}>
                               Uptime: 1 day, 23 hours, 27 mins
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Packages' styles={{ color: '#A9D18E'}}>
                             Packages: pacman
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Shell' styles={{ color: '#A9D18E'}}>
                             Shell: zsh
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Resolution' styles={{ color: '#A9D18E'}}>
                             Resolution: 1920x1080
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='WM' styles={{ color: '#A9D18E'}}>
                             WM: i3
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Terminal' styles={{ color: '#A9D18E'}}>
                             Terminal: Sakura
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='CPU' styles={{ color: '#A9D18E'}}>
                             CPU: Intel i5-10300H (8) @ 2.500GHz
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='GPU' styles={{ color: '#A9D18E'}}>
                             GPU: NVIDIA GeForce GTX 1650 Ti
                             </Highlight>
                     </Text>
-                    <Text fontSize="10" marginLeft="5" fontFamily="Hack" color='white'>
+                    <Text fontSize={{
+                        base:"8",
+                        sm:"10",
+                        md:"10",
+                        lg:"10",
+                        xl:"10"
+                    }}  marginLeft="5" fontFamily="Hack" color='white'>
                             <Highlight query='Memory' styles={{ color: '#A9D18E'}}>
                             Memory: 8947MiB / 16171MiB
                             </Highlight>
