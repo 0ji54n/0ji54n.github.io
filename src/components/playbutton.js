@@ -59,7 +59,7 @@ export const MusicTimeLine = () =>{
     border="1px"
     templateColumns="repeat(24, 1fr)"
     templateRows="repeat(24, 1fr)">
-        <GridItem rowStart="8" rowEnd="20" colStart="2" 
+        <GridItem rowStart="6" rowEnd="19" colStart="2" 
         colEnd="10">
             <Img src={thumbnail} alt="thumbnail"/>
         </GridItem>
@@ -73,13 +73,13 @@ export const MusicTimeLine = () =>{
             <Text fontFamily="Hack" fontSize="13">{SongList[Nameindex.current]}</Text>
         </GridItem>
         <GridItem
-        rowStart="14" rowEnd="21"
+        rowStart="14" rowEnd="19"
         colStart="11" colEnd="24">
-            <Flex justifyContent="center" marginTop="5">
+            <Flex justifyContent="center" marginTop="3">
                <Progress bgColor="gray.500" value={timeLine} h={1} w="90%" max={1140}/>
             </Flex>
         </GridItem>
-        <GridItem rowStart="21" rowEnd="24"
+        <GridItem rowStart="19" rowEnd="24"
         colStart="11" colEnd="24">
             <Flex justifyContent="center">
                 <Toggle/>

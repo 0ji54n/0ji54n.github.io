@@ -79,13 +79,13 @@ export class WhatIsFlareOn extends React.Component {
            duration: 1 
         }}
         initial={{ 
-            marginTop: 20,
+            y:40,
             opacity: 0 }}
         animate={{
-            marginTop: 0, 
+            y: 0, 
             opacity: 1 }}
         exit={{
-            marginTop: 20}}> 
+            y: -40}}> 
         <GoToTop/>
         <DolphinTer/>
         <Dolphin/>

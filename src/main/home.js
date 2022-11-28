@@ -314,16 +314,17 @@ export class Home extends React.Component {
         return(
             <ChakraBox
             transition={{
-               duration: 1 
+               duration: 1
             }}
             initial={{ 
-                marginTop: 20,
+                y:20,
                 opacity: 0 }}
             animate={{
-                marginTop: 0, 
+                y:0,
                 opacity: 1 }}
             exit={{
-                marginTop: 20}}>
+                y:-20,
+                opacity:0 }}>
                 <GoToTop/>
                 <Name/>
                 <AboutMe/>

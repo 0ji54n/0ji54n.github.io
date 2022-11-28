@@ -4,7 +4,7 @@ import { extendTheme } from '@chakra-ui/react';
 const styles = {
   global: props => ({
     body: {
-      color: mode('#c4c0b9', 'whiteAlpha.900')(props),
+      color: mode('gray.400', 'teal.400')(props),
       bg: mode('gray.200', '#2A2B46')(props),
     },
   }),
@@ -25,7 +25,7 @@ const theme = extendTheme({
   components,
   styles,
   fonts:{
-    body: "Hack"
+    body: "Hack",
   }
 });
 
