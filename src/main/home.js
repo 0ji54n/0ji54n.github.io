@@ -1,7 +1,6 @@
 import React from 'react';
 import { Img,Flex, Text, Heading,Grid, GridItem, Highlight,chakra, shouldForwardProp,Box, useColorModeValue} from "@chakra-ui/react";
 import almondblossom from "../media/almondblossom.jpg";
-import terminalbar from "../media/terminalbarsharp.png"
 import { motion, isValidMotionProp } from "framer-motion";
 import GoToTop from "../components/gototop"
 const ChakraBox = chakra(motion.div, {
@@ -57,7 +56,7 @@ export const Neofetch = () => {
             templateRows='repeat(24, 1fr)'>
                 <GridItem
                 rowStart="3" rowEnd="3"
-                colStart="2" colEnd="10"
+                colStart="3" colEnd="20"
                 alignContent="center"
                 >
                     <ChakraBox
@@ -65,24 +64,7 @@ export const Neofetch = () => {
                     duration:0.1}}
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
-                    <Img src={terminalbar} alt="terminalbar"
-                    h={5}
-                    w="200%"
-                    marginTop="0.5"/>
-                    </ChakraBox>
-                </GridItem>
-                <GridItem
-                rowStart="3" rowEnd="3"
-                colStart="10" colEnd="20"
-                position="relative"
-                >
-                    <ChakraBox
-                    transition={{delay:1.2,
-                    duration:0.1}}
-                    initial={{opacity:0}}
-                    animate={{opacity:1}}>
-                    <Text
-                     fontSize="15" marginLeft="5" fontFamily="Hack" color="#597670">neofetch</Text>
+                    <Text color="purple.500"><Highlight query="neofetch" styles={{color:"green.500"}}>0ji54n@TAKO $~ neofetch</Highlight></Text>
                     </ChakraBox>
                 </GridItem>
                 <GridItem
@@ -283,25 +265,15 @@ export const Neofetch = () => {
                     </ChakraBox>
                 </GridItem>
                 <GridItem
-                rowStart="21" rowEnd="23"
-                colStart="2" colEnd="10"
-                textAlign="center"
+                rowStart="22" rowEnd="23"
+                colStart="3" colEnd="20"
                 borderRadius="full">
                     <ChakraBox
                     transition={{delay:1.8,
                     duration:0.1}}
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
-                    <Img src={terminalbar} alt="terminalbar"
-                    h={5}
-                    w="200%"
-                    marginTop={{
-                        base:"5",
-                        sm:"5",
-                        md:"0.5",
-                        lg:"0.5",
-                        xl:"0.5"
-                    }}/>
+                    <Text color="purple.500">0ji54n@TAKO $~</Text>
                     </ChakraBox>
                 </GridItem>
             </Grid>            

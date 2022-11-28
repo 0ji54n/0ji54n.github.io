@@ -1,6 +1,5 @@
 import React from "react";
-import { Flex, Grid, GridItem, Img, Text, Highlight, SimpleGrid,Box,chakra, shouldForwardProp } from "@chakra-ui/react";
-import terminalbar from "../media/terminalbarsharp.png"
+import { Flex, Grid, GridItem, Text, Highlight, SimpleGrid,Box,chakra, shouldForwardProp } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
 import GoToTop from "../components/gototop"
 const ChakraBox = chakra(motion.div, {
@@ -27,7 +26,7 @@ const Txt = () => {
             xl:"30%"
         }}>
             <GridItem
-            colStart="4" colEnd="10"
+            colStart="4" colEnd="20"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox
@@ -35,24 +34,7 @@ const Txt = () => {
                 duration:0.1}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
-                <Img src={terminalbar} alt="terminalbar"
-                h={3} w="200%" />
-                </ChakraBox>
-            </GridItem>
-            <GridItem
-            colStart="11" colEnd="20"
-            rowStart="3" rowEnd="5"
-            >
-                <ChakraBox
-                transition={{delay:1.2,
-                duration:0.1}}
-                initial={{opacity:0}}
-                animate={{opacity:1}}>
-                <Text fontFamily="Hack" fontSize="12">
-                  <Highlight query='cat' styles={{ color: 'blue.400'}}>
-                        cat readme.txt
-                  </Highlight>
-                </Text>
+                    <Text color="purple.500" fontSize="12">0ji54n@TAKO $~ <Highlight query="cat" styles={{color:"blue.400"}}>cat </Highlight><Highlight query="readme.txt" styles={{color:"gray.400"}}>readme.txt</Highlight></Text>
                 </ChakraBox>
             </GridItem>
             <GridItem
@@ -111,7 +93,7 @@ const Skill = () => {
         templateColumns='repeat(24, 1fr)'
         templateRows='repeat(24, 1fr)'>
             <GridItem
-            colStart="4" colEnd="10"
+            colStart="4" colEnd="20"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox
@@ -119,26 +101,9 @@ const Skill = () => {
                 duration:0.1}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
-                <Img src={terminalbar} alt="terminalbar"
-                h={4} w="200%" />
+                <Text color="purple.500" fontSize="13">0ji54n@TAKO $~ <Highlight query="cd" styles={{color:"green.400"}}>cd </Highlight><Highlight query="skills" styles={{color:"blue.400"}}>skills </Highlight><Highlight query=";ls" styles={{color:"green.400"}}>;ls</Highlight></Text>
                 </ChakraBox>
             </GridItem>    
-            <GridItem
-            colStart="11" colEnd="20"
-            rowStart="3" rowEnd="5"
-            >
-                <ChakraBox
-                transition={{delay:1.2,
-                duration:0.1}}
-                initial={{opacity:0}}
-                animate={{opacity:1}}>
-                <Text fontFamily="Hack" color="green.500" fontSize="13">
-                    <Highlight query="skills" styles={{color:"blue.400"}}>
-                        cd skills ; ls
-                    </Highlight>
-                </Text>
-                </ChakraBox>
-            </GridItem>
             <GridItem
             colStart="4" colEnd="24"
             rowStart="7" rowEnd="24">
@@ -201,7 +166,7 @@ const Bio = () => {
         templateColumns='repeat(24, 1fr)'
         templateRows='repeat(24, 1fr)'>
             <GridItem
-            colStart="4" colEnd="10"
+            colStart="4" colEnd="20"
             rowStart="3" rowEnd="5"
             >
                 <ChakraBox
@@ -209,22 +174,7 @@ const Bio = () => {
                 duration:0.1}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
-                <Img src={terminalbar} alt="terminalbar"
-                h={19} w="200%" />
-                </ChakraBox>
-            </GridItem>
-            <GridItem
-            colStart="11" colEnd="20"
-            rowStart="3" rowEnd="5"
-            >
-                <ChakraBox
-                transition={{delay:1.2,
-                duration:0.1}}
-                initial={{opacity:0}}
-                animate={{opacity:1}}>
-                <Text fontFamily="Hack" color="orange.700" fontSize="14">
-                    ./bio
-                </Text>
+                <Text color="purple.500" fontSize="14">0ji54n@TAKO $~ <Highlight query="./bio" styles={{color:"orange.700"}}>./bio</Highlight></Text>
                 </ChakraBox>
             </GridItem>
             <GridItem
