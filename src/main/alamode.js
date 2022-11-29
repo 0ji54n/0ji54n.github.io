@@ -104,9 +104,9 @@ const Content = () =>{
             justifySelf="center"
             textAlign="center" as="i">In cryptography, RC4 (Rivest Cipher 4, also known as ARC4 or ARCFOUR), meaning Alleged RC4,  is a stream cipher. While it is remarkable for its simplicity and speed in software, multiple vulnerabilities have been discovered in RC4, rendering it insecure. - Wikipedia</Code>
             <Text color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">The RC4 Algorithm can be divided into 2 main parts:</Text>
-            <Text color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">1. Key-scheduling Algorithm (KSA):</Text>
+            <Text as="b" color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">1. Key-scheduling Algorithm (KSA):</Text>
             <Img justifySelf="center" src={KSA} alt="KSA" marginTop="10"/>
-            <Text color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">2. Pseudo-random generation algorithm (PRGA):</Text>
+            <Text as="b" color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">2. Pseudo-random generation algorithm (PRGA):</Text>
             <Img justifySelf="center" src={PRGA} alt="PRGA" marginTop="10"/>
             <Text color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">After these 2 steps, we'll get a key stream generated based on the input key. XOR the key stream with plain text will give us cipher text and vice versa, cipher text will give us back the plain text.</Text>
             <Text color={useColorModeValue('blackAlpha.700','white')} marginTop="10" fontSize="14">The first function call (I named as keystream_gen) takes 3 parameters: S array, input key, and key length.</Text>
