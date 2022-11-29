@@ -34,7 +34,7 @@ const Txt = () => {
                 duration:0.1}}
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
-                    <Text color="purple.500" fontSize="12">0ji54n@TAKO $~ <Highlight query="cat" styles={{color:"blue.400"}}>cat </Highlight><Highlight query="readme.txt" styles={{color:"gray.400"}}>readme.txt</Highlight></Text>
+                    <Text color="purple.500" fontSize="12">0ji54n@TAKO $~ <Highlight query="cat" styles={{color:"blue.400"}}>cat </Highlight><Highlight query="readme.txt" styles={{color:"whitesmoke"}}>readme.txt</Highlight></Text>
                 </ChakraBox>
             </GridItem>
             <GridItem
@@ -47,13 +47,13 @@ const Txt = () => {
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
                 <Box>
-                <Text fontFamily="Hack" fontSize="12">
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="12">
                     Name: Le Xuan Nghia
                 </Text>
-                <Text fontFamily="Hack" fontSize="12" marginTop="2">
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="12" marginTop="2">
                     Date of Birth: 2001/??/??
                 </Text>
-                <Text fontFamily="Hack" fontSize="12" marginTop="2">
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="12" marginTop="2">
                     Language: English, Vietnamese, 日本語
                 </Text>
                 </Box>
@@ -186,16 +186,16 @@ const Bio = () => {
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
                 <Box>
-                <Text fontFamily="Hack" fontSize="14">
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">
                 2019 Oct -{`>`} エール学園日本語教育学科
                 (EHLE Japanese Language School)
                 </Text>
-                <Text fontFamily="Hack" fontSize="14">|</Text>
-                <Text fontFamily="Hack" fontSize="14">2021 Feb -{`>`} Pass N2 Japanese-Language Proficiency Test (JLPT)</Text>
-                <Text fontFamily="Hack" fontSize="14">|</Text>
-                <Text fontFamily="Hack" fontSize="14">2021 Mar -{`>`} Graduate</Text>
-                <Text fontFamily="Hack" fontSize="14">|</Text>
-                <Text fontFamily="Hack" fontSize="14">2021 Oct – Present -{`>`} Self-taught programming/hacking</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Feb -{`>`} Pass N2 Japanese-Language Proficiency Test (JLPT)</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Mar -{`>`} Graduate</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Oct – Present -{`>`} Self-taught programming/hacking</Text>
                 </Box>
                 </ChakraBox>
             </GridItem>

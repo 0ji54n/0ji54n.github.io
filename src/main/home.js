@@ -64,17 +64,17 @@ export const Neofetch = () => {
                     duration:0.1}}
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
-                    <Text color="purple.500"><Highlight query="neofetch" styles={{color:"green.500"}}>0ji54n@TAKO $~ neofetch</Highlight></Text>
+                    <Text fontSize="14" color="purple.500"><Highlight query="neofetch" styles={{color:"green.500"}}>0ji54n@TAKO $~ neofetch</Highlight></Text>
                     </ChakraBox>
                 </GridItem>
                 <GridItem
                 rowStart="6" rowEnd="20"
                 colStart={{
                     base:"3",
-                    xl:"4"
+                    xl:"3"
                 }} colEnd={{
                     base:"9",
-                    xl:"8"
+                    xl:"7"
                 }}
                 overflow="hidden">
                     <ChakraBox
@@ -102,7 +102,10 @@ export const Neofetch = () => {
                 </GridItem>
                 <GridItem
                 rowStart="6" rowEnd="20"
-                colStart="10" colEnd="24">
+                colStart={{
+                    base:"10",
+                    xl:"8"
+                }} colEnd="24">
                     <ChakraBox
                     transition={{delay:1.5,
                     duration:0.1}}
@@ -273,7 +276,7 @@ export const Neofetch = () => {
                     duration:0.1}}
                     initial={{opacity:0}}
                     animate={{opacity:1}}>
-                    <Text color="purple.500">0ji54n@TAKO $~</Text>
+                    <Text fontSize="14" color="purple.500">0ji54n@TAKO $~</Text>
                     </ChakraBox>
                 </GridItem>
             </Grid>            
