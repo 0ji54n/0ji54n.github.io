@@ -53,7 +53,7 @@ const Content = () =>{
             </Code> 
             <Text marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14"><Highlight query="flare" styles={{color:"green.500"}}>Again, extract the file with the "flare" password.</Highlight></Text>
             <Img justifySelf="center" src={folder} alt="folder" marginTop="10"/>
-            <Text marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">This time we only get an exe file. Double-click to run it, a windows pop up and closes right away. Open HxD to find if there are any interesting strings, and there are.</Text>
+            <Text marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">This time we only get an exe file. Double-click to run it, a windows pop up and closes right away. Open HxD to find interesting strings, and there are.</Text>
             <Img justifySelf="center" src={HxD} alt="HxD" marginTop="10"/>
             <Text marginTop="10" color={useColorModeValue('blackAlpha.700','white')} fontSize="14">Next, open IDA to static analysis before throwing it into the debugger. We can see the cmp [ebp+argc], 2, if ZF is 0 then it'll just jump to loc_4011F0 and end the program.</Text>
             <Img justifySelf="center" src={IDA} alt="IDA" marginTop="10"/>
