@@ -25,7 +25,7 @@ const theme = extendTheme({
   components,
   styles,
   fonts:{
-    body: "Hack",
+    body: `'Hack', sans-serif`,
   }
 });
 
