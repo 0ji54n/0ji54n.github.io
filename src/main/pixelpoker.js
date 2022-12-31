@@ -23,7 +23,7 @@ const Title = () =>{
         <Heading
         fontFamily="Anurati"
         marginTop="20"
-        fontSize="50"
+        fontSize="40"
         color={useColorModeValue('blackAlpha.700','white')}
         >
             PIXEL POKER
