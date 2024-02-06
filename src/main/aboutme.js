@@ -150,11 +150,11 @@ const Bio = () => {
     return(
         <Flex justifyContent="center" marginTop = "5" marginBottom="2">
         <Grid bgColor="#333F50" h={{
-            base:350,
-            sm:300,
-            md:300,
-            lg:300,
-            xl:300
+            base:500,
+            sm:500,
+            md:400,
+            lg:400,
+            xl:400
         }} border="1px"
         w={{
             base:"90%",
