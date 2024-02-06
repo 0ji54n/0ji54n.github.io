@@ -2,7 +2,7 @@ import React from 'react';
 import { IconButton,Flex, useDisclosure, Collapse,useColorModeValue} from "@chakra-ui/react";
 import { FiShare2 } from 'react-icons/fi';
 import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
-import { FaRedditAlien,FaPinterest } from 'react-icons/fa';
+import { FaRedditAlien,FaPinterest,FaLinkedin } from 'react-icons/fa';
 
 export const MusicMinimize = () =>{
     const { isOpen, onToggle } = useDisclosure()
@@ -37,6 +37,17 @@ export const MusicMinimize = () =>{
                  <Flex justifyContent="center" gap={4}
                  bgColor="#2C3038" borderRadius="md"
                  shadow="dark-lg">
+                    <IconButton
+                    color="blue.600"
+                    variant="ghost"
+                    icon={<FaLinkedin/>}
+                    _hover={{
+                        bgColor : 'rgba(52, 52, 52, 0.2)'
+                      }}
+                      colorScheme='rgba(52, 52, 52, 0.2)'
+                    onClick={()=>{
+                        window.open("https://www.linkedin.com/in/le-xuan-nghia-998a7b215/")
+                    }}/>
                     <IconButton
                     color="orange.600"
                     variant="ghost"

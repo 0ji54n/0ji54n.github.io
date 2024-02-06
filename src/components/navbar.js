@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
 import { MusicMinimize } from "./musicterminal";
-import { FaRedditAlien, FaPinterest } from 'react-icons/fa';
+import { FaRedditAlien, FaPinterest, FaLinkedin } from 'react-icons/fa';
 import { MusicTimeLine } from "./playbutton";
 import { motion, isValidMotionProp} from "framer-motion";
 const ChakraBox = chakra(motion.div, {
@@ -111,7 +111,22 @@ const Inner1 = () =>{
                 xl:"block",
             }}>
                 <Flex justifyContent="center">
-                    <SimpleGrid columns={5} gap={2}>
+                    <SimpleGrid columns={6} gap={2}>
+                    <ChakraBox
+                    whileHover={{scale:1.1}}
+                    whileTap={{scale:0.9}}>
+                    <IconButton
+                    color="blue.600"
+                    variant="ghost"
+                    icon={<FaLinkedin/>}
+                    _hover={{
+                        bgColor : 'rgba(52, 52, 52, 0.2)'
+                      }}
+                      colorScheme='rgba(52, 52, 52, 0.2)'
+                    onClick={()=>{
+                      window.open("https://www.linkedin.com/in/le-xuan-nghia-998a7b215/")
+                    }}/>
+                    </ChakraBox>
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
