@@ -122,13 +122,13 @@ const Skill = () => {
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Python</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Javascript</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >ReactJS</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Disassembler</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Debugger</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Linux</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >RE</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Pwn</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Rev_Engineering</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Pwnable</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Malware_Analyst</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Network</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Java</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >MySQL</Text></Box>
                 </SimpleGrid>
                 </ChakraBox>
             </GridItem>
@@ -186,16 +186,20 @@ const Bio = () => {
                 initial={{opacity:0}}
                 animate={{opacity:1}}>
                 <Box>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">
                 2019 Oct -{`>`} エール学園日本語教育学科
                 (EHLE Japanese Language School)
                 </Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Feb -{`>`} Pass N2 Japanese-Language Proficiency Test (JLPT)</Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Mar -{`>`} Graduate</Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">|</Text>
-                <Text color="whitesmoke" fontFamily="Hack" fontSize="14">2021 Oct – Present -{`>`} Self-taught programming/hacking</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">2021 Feb -{`>`} Pass N2 Japanese-Language Proficiency Test (JLPT)</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">2021 Mar -{`>`} Graduate</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">2021 Oct – 2023 Jan -{`>`} Self-taught programming/hacking</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">2023 Jan – 2023 Apr -{`>`} Freelance Game Translator</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">|</Text>
+                <Text color="whitesmoke" fontFamily="Hack" fontSize="13">2023 Apr - Present - {`>`} Bridge System Engineer at ARIS VIETNAM CO., LTD</Text>
                 </Box>
                 </ChakraBox>
             </GridItem>

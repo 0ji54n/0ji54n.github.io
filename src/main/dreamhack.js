@@ -5,19 +5,42 @@ import { Link } from "react-router-dom";
 
 const FolderName = [
     {
-        "name" : "FlareOn9",
-        "link" : "./flareon9"
+        "name" : "Cherry",
+        "link" : "./cherry"
     },
     {
-        "name" : "Dreamhack",
-        "link" : "./dreamhack"
+        "name" : "mmapped",
+        "link" : "./mmaped"
     },
     {
-        "name" : "New Folder",
-        "link" : "./newfolder"
+        "name" : "awesome-basics",
+        "link" : "./awesome_basics"
+    },
+    {
+        "name" : "MSNW",
+        "link" : "./msnw"
+    },
+    {
+        "name" : "pwn-library",
+        "link" : "./pwn-library"
+    },
+    {
+        "name" : "cmd_center",
+        "link" : "./cmd_center"
+    },
+    {
+        "name" : "blindsc",
+        "link" : "./blindsc"
+    },
+    {
+        "name" : "send_sig",
+        "link" : "./send_sig"
+    },
+    {
+        "name" : "validator",
+        "link" : "./validator"
     }
 ]
-
 
 
 const DolphinTer = () => {
@@ -41,7 +64,7 @@ const DolphinTer = () => {
         </Flex>
     )
 }
-const Dolphin = (props) => {  
+const Dolphin = () => {
     const [inputText, setInputText] = useState("");
     let inputHandler = (e) => {
       var lowerCase = e.target.value.toLowerCase();
@@ -49,13 +72,19 @@ const Dolphin = (props) => {
     };
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
-            <Grid bgColor="#333F50" h={550} border="1px"
+            <Grid bgColor="#333F50" h={{
+                base:1300,
+                sm:1300,
+                md:900,
+                lg:800,
+                xl:800
+            }} border="1px"
             w={{
                 base:"90%",
                 sm:"90%",
                 md:"80%",
                 lg:"70%",
-                xl:"40%"
+                xl:"60%"
             }}
             templateColumns="repeat(24, 1fr)"
             templateRows="repeat(24, 1fr)">
@@ -63,22 +92,27 @@ const Dolphin = (props) => {
                 colStart="3" colEnd="23"
                 rowStart="2" rowEnd="4">
                     <Input placeholder="Search..."
-                    inputMode="search"
                     focusBorderColor="gray.900"
                     bgColor="gray.800" 
-                    fontFamily="Hack"
-                    onChange={inputHandler}/>
+                    onChange={inputHandler}
+                    fontFamily="Hack"/>
                 </GridItem>
                 <GridItem
                 colStart="2" colEnd="24"
-                rowStart="5" rowEnd="24"
+                rowStart={{
+                    base:4,
+                    sm:4,
+                    md:5,
+                    lg:5,
+                    xl:5
+                }} rowEnd="24"
                 bgColor="gray.800">
                     <SimpleGrid columns={{
                         base:2,
                         sm:2,
-                        md:2,
-                        lg:3,
-                        xl:3,
+                        md:3,
+                        lg:4,
+                        xl:4,
                     }}>
                         {
                         FolderName.filter(item =>{
@@ -87,10 +121,10 @@ const Dolphin = (props) => {
                             }
                             else if (item.name.toLowerCase().includes(inputText.toLowerCase())){
                                 return item;
-                            }    
+                            }     
                             return false;
                         }).map((item, index) => (
-                            <Box margin="10" key={index}>
+                        <Box margin="10" key={index}>
                             <Link to={item.link}>
                                 <IconButton
                                 _hover={{
@@ -99,10 +133,11 @@ const Dolphin = (props) => {
                                   colorScheme='rgba(52, 52, 52, 0.2)'
                                 boxSize="20"
                                 variant="ghost"
-                                icon={<AiFillFolder size="80"/>}/>
+                                icon={<AiFillFolder size="80"/>}
+                                />
                             </Link>
                             <Text fontFamily="Hack">{item.name}</Text>
-                            </Box>
+                        </Box>
                         ))
                         }
                     </SimpleGrid>
@@ -112,7 +147,7 @@ const Dolphin = (props) => {
     )
 }
 
-export class Works extends React.Component {
+export class DreamHack extends React.Component {
     render(){
         return(
             <Box>

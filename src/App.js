@@ -20,6 +20,10 @@ import { DarnMice } from './main/darnmice.js';
 import {T8} from "./main/t8.js"
 import {Alamode} from "./main/alamode"
 import { Anode } from './main/anode.js';
+import { DreamHack } from './main/dreamhack.js';
+import { BlindSC } from './main/blindsc.js';
+import { SendSig } from './main/send_sig.js';
+import { Validator } from './main/validator.js';
 
 function App() {
   return (
@@ -42,6 +46,10 @@ function App() {
           <Route path="works/flareon9/05" element={<T8/>}/>
           <Route path="works/flareon9/06" element={<Alamode/>}/>
           <Route path="works/flareon9/07" element={<Anode/>}/>
+          <Route path="works/dreamhack" element={<DreamHack/>}/>
+          <Route path="works/dreamhack/blindsc" element={<BlindSC/>}/>
+          <Route path="works/dreamhack/send_sig" element={<SendSig/>}/>
+          <Route path="works/dreamhack/validator" element={<Validator/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>
