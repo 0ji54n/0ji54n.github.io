@@ -24,6 +24,8 @@ import { DreamHack } from './main/dreamhack.js';
 import { BlindSC } from './main/blindsc.js';
 import { SendSig } from './main/send_sig.js';
 import { Validator } from './main/validator.js';
+import { Cherry } from './main/cherry.js';
+import { Mmapped } from './main/mmapped.js';
 
 function App() {
   return (
@@ -50,6 +52,8 @@ function App() {
           <Route path="works/dreamhack/blindsc" element={<BlindSC/>}/>
           <Route path="works/dreamhack/send_sig" element={<SendSig/>}/>
           <Route path="works/dreamhack/validator" element={<Validator/>}/>
+          <Route path="works/dreamhack/cherry" element={<Cherry/>}/>
+          <Route path="works/dreamhack/mmapped" element={<Mmapped/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>
