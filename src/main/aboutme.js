@@ -11,7 +11,7 @@ const Txt = () => {
         <Flex justifyContent="center" marginTop = "5">
         <Grid bgColor="#333F50" h={{
             base:150,
-            sm:120,
+            sm:150,
             md:120,
             lg:120,
             xl:120
@@ -78,7 +78,7 @@ const Skill = () => {
         <Flex justifyContent="center" marginTop = "5">
         <Grid bgColor="#333F50" h={{
             base:200,
-            sm:170,
+            sm:200,
             md:170,
             lg:150,
             xl:130
@@ -123,9 +123,9 @@ const Skill = () => {
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Javascript</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >ReactJS</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Linux</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Rev_Engineering</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >RE</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Pwnable</Text></Box>
-                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Malware_Analyst</Text></Box>
+                     <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Mal_Analyst</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Network</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >Java</Text></Box>
                      <Box height='16px'><Text fontFamily="Hack" color="blue.400" fontSize="13" >MySQL</Text></Box>

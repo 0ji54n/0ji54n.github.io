@@ -8,7 +8,6 @@ import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
 import { MusicMinimize } from "./musicterminal";
 import { FaRedditAlien, FaPinterest, FaLinkedin } from 'react-icons/fa';
-import { MusicTimeLine } from "./playbutton";
 import { motion, isValidMotionProp} from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -256,7 +255,26 @@ export class NavigationBar extends React.Component {
           <Flex justifyContent="center" marginTop="40"
           w="40%" h={150}>
             <Avt/>
-            <MusicTimeLine/>
+            {/* <MusicTimeLine/> */}
+            <Flex 
+            marginLeft={20} 
+            display={{
+              base:'none',
+              sm:'none',
+              md:'none',
+              lg:'none',
+              xl:'grid'
+            }}>
+            <iframe
+              title="Spotify Embed: Recommendation Playlist "
+              src={`https://open.spotify.com/embed/playlist/1kpfEvwq0X88vZLLefhkFX?utm_source=generator`}
+              width="100%"
+              height="152px"
+              style={{borderRadius: '12px'}}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+            </Flex>
           </Flex>
           </Flex>
           <MusicMinimize/>
