@@ -10,7 +10,7 @@ const FolderName = [
     },
     {
         "name" : "mmapped",
-        "link" : "./mmaped"
+        "link" : "./mmapped"
     },
     {
         "name" : "awesome-basics",
