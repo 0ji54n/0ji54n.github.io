@@ -272,7 +272,6 @@ export class NavigationBar extends React.Component {
               height="152px"
               style={{borderRadius: '12px'}}
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
             />
             </Flex>
           </Flex>
