@@ -1,7 +1,5 @@
 import React from "react";
-import {Button,Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp} from "@chakra-ui/react";
-import {Link} from "react-router-dom";
-import {FaAngleDoubleLeft,FaAngleDoubleRight} from "react-icons/fa";
+import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
 import { motion, isValidMotionProp } from "framer-motion";
 import packedaway from "../media/cyberapo/packedaway.png"
