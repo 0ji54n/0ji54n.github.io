@@ -26,6 +26,7 @@ import { SendSig } from './main/send_sig.js';
 import { Validator } from './main/validator.js';
 import { Cherry } from './main/cherry.js';
 import { Mmapped } from './main/mmapped.js';
+import { CYBERAPO_REV } from './main/cyberaporev.js';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path="works/dreamhack/validator" element={<Validator/>}/>
           <Route path="works/dreamhack/cherry" element={<Cherry/>}/>
           <Route path="works/dreamhack/mmapped" element={<Mmapped/>}/>
+          <Route path="works/cyberaporev" element={<CYBERAPO_REV/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>
