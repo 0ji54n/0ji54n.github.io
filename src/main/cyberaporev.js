@@ -100,6 +100,10 @@ export class CYBERAPO_REV extends React.Component{
              exit={{
                  marginTop: 20}}
              >
+                <head>
+                    <meta property="og:image" content="https://mugshotbot.com/m/NolBe9na"/>
+                    <meta property="twitter:card" content="summary_large_image"/>
+                </head>
                 <GoToTop/>
                 <Title/>
                 <Content/>
