@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
 import { motion, isValidMotionProp } from "framer-motion";
@@ -16,6 +17,7 @@ import followthepath5 from "../media/cyberapo/followthepath5.png"
 import quickscan from "../media/cyberapo/quickscan.png"
 import quickscan1 from "../media/cyberapo/quickscan1.png"
 import quickscan2 from "../media/cyberapo/quickscan2.png"
+import cyberapo from "../media/cyberapo/cyberapo.jpg"
 
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -100,10 +102,13 @@ export class CYBERAPO_REV extends React.Component{
              exit={{
                  marginTop: 20}}
              >
-                <head>
-                    <title>Cyber Apocalypse 2024's writeup</title>
-                    <meta name="image" content={followthepath5} />
-                </head>
+                <div className="application">
+                    <Helmet>
+                        <title>Cyber Apocalypse 2024's writeup</title>
+                        <link rel="canonical" href="https://0ji54n.space/works/cyberaporev" />
+                        <meta name="image" content={cyberapo}/>
+                    </Helmet>
+                </div>
                 <GoToTop/>
                 <Title/>
                 <Content/>
