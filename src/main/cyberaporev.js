@@ -101,8 +101,8 @@ export class CYBERAPO_REV extends React.Component{
                  marginTop: 20}}
              >
                 <head>
-                    <meta property="og:image" content="https://mugshotbot.com/m/NolBe9na"/>
-                    <meta property="twitter:card" content="summary_large_image"/>
+                    <title>Cyber Apocalypse 2024's writeup</title>
+                    <meta name="image" content={followthepath5} />
                 </head>
                 <GoToTop/>
                 <Title/>
