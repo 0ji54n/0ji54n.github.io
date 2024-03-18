@@ -102,7 +102,7 @@ export class CYBERAPO_REV extends React.Component{
              exit={{
                  marginTop: 20}}
              >
-                <div className="application">
+                <div>
                     <Helmet>
                         <title>Cyber Apocalypse 2024's writeup</title>
                         <link rel="canonical" href="https://0ji54n.space/works/cyberaporev" />

@@ -3,6 +3,7 @@ import { Img,Flex, Text, Heading,Grid, GridItem, Highlight,chakra, shouldForward
 import almondblossom from "../media/almondblossom.jpg";
 import { motion, isValidMotionProp } from "framer-motion";
 import GoToTop from "../components/gototop"
+import { Helmet } from 'react-helmet';
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -300,6 +301,12 @@ export class Home extends React.Component {
             exit={{
                 y:-20,
                 opacity:0 }}>
+                <div>
+                    <Helmet>
+                        <title>Home Page</title>
+                        <link rel="canonical" href="https://0ji54n.space/" />
+                    </Helmet>
+                </div>
                 <GoToTop/>
                 <Name/>
                 <AboutMe/>

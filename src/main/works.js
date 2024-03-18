@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Flex,Grid,GridItem,SimpleGrid, Text, Highlight,Input, IconButton,Box} from "@chakra-ui/react"
 import { AiFillFolder } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const FolderName = [
     {
@@ -120,6 +121,12 @@ export class Works extends React.Component {
     render(){
         return(
             <Box>
+                <div>
+                    <Helmet>
+                        <title>CTF's writeups</title>
+                        <link rel="canonical" href="https://0ji54n.space/works/" />
+                    </Helmet>
+                </div>
                 <DolphinTer/>
                 <Dolphin/>
             </Box>
