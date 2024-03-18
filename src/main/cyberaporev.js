@@ -104,9 +104,28 @@ export class CYBERAPO_REV extends React.Component{
              >
                 <div>
                     <Helmet>
-                        <title>Cyber Apocalypse 2024's writeup</title>
-                        <link rel="canonical" href="https://0ji54n.space/works/cyberaporev" />
-                        <meta name="image" content={cyberapo}/>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
+                    <title>Cyber Apocalypse 2024's writeup</title>
+                    <meta name="author" content="0ji54n"/>
+                    <meta name="copyright" content="0ji54n"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="theme-color" content="#0d0d0d"/>
+                    <meta name="description" content=""/>
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content="Cyber Apocalypse 2024's writeup"/>
+                    <meta property="og:url" content="https://0ji54n.space/works/cyberaporev"/>
+                    <meta property="og:site_name" content="0ji54n"/>
+                    <meta property="og:description" content=""/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:image" content={cyberapo}/>
+                    <meta property="article:author" content="0ji54n"/>
+                    <meta property="article:tag" content="Rev"/>
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:image" content={cyberapo}/>
+                    <link rel="canonical" href="https://0ji54n.space/works/cyberaporev"/>
+                    <link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/>
                     </Helmet>
                 </div>
                 <GoToTop/>
