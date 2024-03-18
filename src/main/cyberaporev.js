@@ -125,7 +125,6 @@ export class CYBERAPO_REV extends React.Component{
                     <meta name="twitter:card" content="summary"/>
                     <meta name="twitter:image" content={cyberapo}/>
                     <link rel="canonical" href="https://0ji54n.space/works/cyberaporev"/>
-                    <link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/>
                     </Helmet>
                 </div>
                 <GoToTop/>
