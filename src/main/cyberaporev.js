@@ -112,12 +112,12 @@ export class CYBERAPO_REV extends React.Component{
                     <meta name="copyright" content="0ji54n"/>
                     <meta name="format-detection" content="telephone=no"/>
                     <meta name="theme-color" content="#0d0d0d"/>
-                    <meta name="description" content=""/>
+                    <meta name="description" content="Đây là năm đầu tiên mình tham gia Cyber Apocalypse, theo đánh giá chung thì khá dễ thở với mức chênh lệch số điểm giữa các challenge dễ khó khác nhau là không nhiều. Vì tham gia một mình nên mình phải làm toàn bộ các danh mục để kiếm được nhiều điểm nhất có thể, nhưng trong đó vẫn tập trung vào 3 thứ mình dành thời gian nhiều nhất: rev, pwn và crypto."/>
                     <meta property="og:type" content="article"/>
                     <meta property="og:title" content="Cyber Apocalypse 2024's writeup"/>
                     <meta property="og:url" content="https://0ji54n.space/works/cyberaporev"/>
                     <meta property="og:site_name" content="0ji54n"/>
-                    <meta property="og:description" content=""/>
+                    <meta property="og:description" content="Đây là năm đầu tiên mình tham gia Cyber Apocalypse, theo đánh giá chung thì khá dễ thở với mức chênh lệch số điểm giữa các challenge dễ khó khác nhau là không nhiều. Vì tham gia một mình nên mình phải làm toàn bộ các danh mục để kiếm được nhiều điểm nhất có thể, nhưng trong đó vẫn tập trung vào 3 thứ mình dành thời gian nhiều nhất: rev, pwn và crypto."/>
                     <meta property="og:locale" content="en_US"/>
                     <meta property="og:image" content={htb}/>
                     <meta property="article:author" content="0ji54n"/>
