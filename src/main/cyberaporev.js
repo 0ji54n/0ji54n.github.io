@@ -17,7 +17,6 @@ import followthepath5 from "../media/cyberapo/followthepath5.png"
 import quickscan from "../media/cyberapo/quickscan.png"
 import quickscan1 from "../media/cyberapo/quickscan1.png"
 import quickscan2 from "../media/cyberapo/quickscan2.png"
-import htb from "../media/cyberapo/htb.jpg"
 
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -119,11 +118,11 @@ export class CYBERAPO_REV extends React.Component{
                     <meta property="og:site_name" content="0ji54n"/>
                     <meta property="og:description" content="Đây là năm đầu tiên mình tham gia Cyber Apocalypse, theo đánh giá chung thì khá dễ thở với mức chênh lệch số điểm giữa các challenge dễ khó khác nhau là không nhiều. Vì tham gia một mình nên mình phải làm toàn bộ các danh mục để kiếm được nhiều điểm nhất có thể, nhưng trong đó vẫn tập trung vào 3 thứ mình dành thời gian nhiều nhất: rev, pwn và crypto."/>
                     <meta property="og:locale" content="en_US"/>
-                    <meta property="og:image" content={htb}/>
+                    <meta property="og:image" content={followthepath5}/>
                     <meta property="article:author" content="0ji54n"/>
                     <meta property="article:tag" content="Rev"/>
                     <meta name="twitter:card" content="summary"/>
-                    <meta name="twitter:image" content={htb}/>
+                    <meta name="twitter:image" content={followthepath5}/>
                     <link rel="canonical" href="https://0ji54n.space/works/cyberaporev"/>
                     </Helmet>
                 </div>
