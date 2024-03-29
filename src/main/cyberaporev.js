@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef,useEffect} from "react";
 import { Helmet } from "react-helmet";
 import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
@@ -85,6 +85,35 @@ const Content = () =>{
             </Flex>
     )
 }
+
+const UtterancesComments = () => {
+    const ref = useRef();
+  
+    useEffect(() => {
+      const script = document.createElement('script');
+  
+      const config = {
+        src: 'https://utteranc.es/client.js',
+        repo: '0ji54n/-utterances-storage',
+        'issue-term': 'pathname',
+        theme: 'github-light',
+        crossOrigin: 'anonymous',
+        defer: true,
+      };
+  
+      Object.entries(config).forEach(([key, value]) => {
+        script.setAttribute(key, value);
+      });
+  
+      setTimeout(() => {
+        ref.current.append(script);
+      }, 300);
+    }, []);
+  
+    return <div ref={ref} />;
+  };
+  
+
 export class CYBERAPO_REV extends React.Component{
     render(){
         return(
@@ -129,6 +158,7 @@ export class CYBERAPO_REV extends React.Component{
                 <GoToTop/>
                 <Title/>
                 <Content/>
+                <UtterancesComments/>
             </ChakraBox>
         )
     }

@@ -267,7 +267,7 @@ export class NavigationBar extends React.Component {
             }}>
             <iframe
               title="Spotify Embed: Recommendation Playlist "
-              src={`https://open.spotify.com/embed/album/4jqriXCBaXfrJomQAwCCJa?utm_source=generator`}
+              src={`https://open.spotify.com/embed/playlist/1kpfEvwq0X88vZLLefhkFX?utm_source=generator`}
               width="100%"
               height="152px"
               style={{borderRadius: '12px'}}
