@@ -87,22 +87,23 @@ const Content = () =>{
 }
 
 const UtterancesComments = () => {
-    const ref = useRef();
-  
+    const ref = useRef();  
+    const themes = useColorModeValue('github-light','photon-dark')
+
     useEffect(() => {
       const script = document.createElement('script');
-  
+
       const config = {
         src: 'https://utteranc.es/client.js',
         repo: '0ji54n/-utterances-storage',
         'issue-term': 'pathname',
-        theme: 'github-light',
         crossOrigin: 'anonymous',
         defer: true,
       };
   
       Object.entries(config).forEach(([key, value]) => {
         script.setAttribute(key, value);
+        script.setAttribute('theme',themes)
       });
   
       setTimeout(() => {
