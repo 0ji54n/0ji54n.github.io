@@ -94,7 +94,7 @@ const Comment = () => {
         repo="0ji54n/-utterances-storage"
         repoId="R_kgDOLnA4zQ"
         category="General"
-        categoryId="DIC_kwDOLnA4zc4CeUWK"
+        categoryId="DIC_kwDOLnA4zc4CeUWJ"
         mapping="pathname"
         reactionsEnabled="1"
         emitMetadata="0"
