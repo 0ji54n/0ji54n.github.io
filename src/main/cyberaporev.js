@@ -1,4 +1,4 @@
-import React, {useRef,useEffect} from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
@@ -17,6 +17,7 @@ import followthepath5 from "../media/cyberapo/followthepath5.png"
 import quickscan from "../media/cyberapo/quickscan.png"
 import quickscan1 from "../media/cyberapo/quickscan1.png"
 import quickscan2 from "../media/cyberapo/quickscan2.png"
+import Giscus from '@giscus/react';
 
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
@@ -86,34 +87,23 @@ const Content = () =>{
     )
 }
 
-const UtterancesComments = () => {
-    const ref = useRef();  
-    const themes = useColorModeValue('github-light','photon-dark')
-
-    useEffect(() => {
-      const script = document.createElement('script');
-
-      const config = {
-        src: 'https://utteranc.es/client.js',
-        repo: '0ji54n/-utterances-storage',
-        'issue-term': 'pathname',
-        crossOrigin: 'anonymous',
-        defer: true,
-      };
-  
-      Object.entries(config).forEach(([key, value]) => {
-        script.setAttribute(key, value);
-        script.setAttribute('theme',themes)
-      });
-  
-      setTimeout(() => {
-        ref.current.append(script);
-      }, 300);
-    }, []);
-  
-    return <div ref={ref} />;
-  };
-  
+const Comment = () => {
+    return (
+        <Giscus
+        id="comments"
+        repo="0ji54n/-utterances-storage"
+        repoId="R_kgDOLnA4zQ"
+        category="Q&A"
+        categoryId="DIC_kwDOLnA4zc4CeUWK"
+        mapping="pathname"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme={useColorModeValue('noborder_light','noborder_dark')}
+        lang="en"
+        loading="lazy"/>
+    )
+}
 
 export class CYBERAPO_REV extends React.Component{
     render(){
@@ -159,7 +149,18 @@ export class CYBERAPO_REV extends React.Component{
                 <GoToTop/>
                 <Title/>
                 <Content/>
-                <UtterancesComments/>
+                <Flex justifyContent="center">
+                <Grid
+                    w={{
+                        base:"95%",
+                        sm:"80%",
+                        md:"70%",
+                        lg:"60%",
+                        xl:"60%"
+                    }}>
+                    <Comment/>
+                </Grid>
+                </Flex>
             </ChakraBox>
         )
     }
