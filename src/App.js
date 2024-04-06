@@ -27,6 +27,7 @@ import { Validator } from './main/validator.js';
 import { Cherry } from './main/cherry.js';
 import { Mmapped } from './main/mmapped.js';
 import { CYBERAPO_REV } from './main/cyberaporev.js';
+import { Balatro } from './main/balatro.js';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route path="works/dreamhack/cherry" element={<Cherry/>}/>
           <Route path="works/dreamhack/mmapped" element={<Mmapped/>}/>
           <Route path="works/cyberaporev" element={<CYBERAPO_REV/>}/>
+          <Route path="works/balatro" element={<Balatro/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>

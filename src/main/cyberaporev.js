@@ -98,7 +98,7 @@ const Comment = () => {
         mapping="pathname"
         reactionsEnabled="1"
         emitMetadata="0"
-        inputPosition="top"
+        inputPosition="bottom"
         theme={useColorModeValue('noborder_light','noborder_dark')}
         lang="en"
         loading="lazy"/>

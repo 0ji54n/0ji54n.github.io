@@ -4,7 +4,7 @@ import { extendTheme } from '@chakra-ui/react';
 const styles = {
   global: props => ({
     body: {
-      color: mode('gray.400', '#ccc3a3')(props),
+      color: mode('gray.500', '#ccc3a3')(props),
       bg: mode('gray.200', '#2A2B46')(props),
     },
   }),

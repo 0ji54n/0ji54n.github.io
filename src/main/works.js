@@ -18,6 +18,10 @@ const FolderName = [
         "link" : "./cyberaporev"
     },
     {
+        "name" : "Balatro",
+        "link" : "./balatro"
+    },
+    {
         "name" : "New Folder",
         "link" : "./newfolder"
     }
@@ -54,7 +58,7 @@ const Dolphin = (props) => {
     };
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
-            <Grid bgColor="#333F50" h={550} border="1px"
+            <Grid bgColor="#333F50" h={700} border="1px"
             w={{
                 base:"90%",
                 sm:"90%",
