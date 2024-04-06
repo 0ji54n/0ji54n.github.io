@@ -59,10 +59,10 @@ const Content = () =>{
                 xl:"60%"
             }}>
                 <Text>Recently I found Balatro - a Poker (actually Big Two) based card game. I'm usually not good at all types of video games, and with curiosity, I decided to find out how this game was made.</Text>
-                <Text>Based on wikipedia and google, this game was made using an engine called Löve - a framework that helps users program games using Lua. You can learn more about it <Link color={useColorModeValue("#a6637b","#61ba68")} as="i" href="https://love2d.org/">here.</Link></Text>
+                <Text>Based on wikipedia and google, this game was made using an engine called Löve - a framework that helps users program games using Lua. You can learn more about it <Link color={useColorModeValue("#a6637b","#61ba68")} href="https://love2d.org/">here.</Link></Text>
                 <Text>The game directory only includes an executable file and some dll files, no folders. So my guess at the moment is that all the assets and logic of the game are packaged inside that exe file.</Text>
                 <Img justifySelf="center" borderRadius={10} src={balatro1} alt="packedaway" marginTop="10" marginBottom="10"/>
-                <Text>Continue searching on google with the keywords "Love2D", "windows", "executable" and I found a <Link color={useColorModeValue("#a6637b","#61ba68")} as="i" href="https://love2d.org/wiki/Game_Distribution#Creating_a_Windows_Executable/">link</Link> to love2d's wiki about creating exe file.</Text>
+                <Text>Continue searching on google with the keywords "Love2D", "windows", "executable" and I found a <Link color={useColorModeValue("#a6637b","#61ba68")} href="https://love2d.org/wiki/Game_Distribution#Creating_a_Windows_Executable/">link</Link> to love2d's wiki about creating exe file.</Text>
                 <Text as="i" marginTop="10" color={useColorModeValue('gray.400','#656648')}>Windows</Text>
                 <Text as="i" color={useColorModeValue('gray.400','#656648')}>To create your game executable under windows use the command line to run</Text>
                 <Text as="i" marginBottom="10" color={useColorModeValue('gray.400','#656648')}>copy /b love.exe+SuperGame.love SuperGame.exe</Text>
@@ -70,7 +70,7 @@ const Content = () =>{
                 <Text>The official file "love.exe" when opened alone will look like this:</Text>
                 <Img justifySelf="center" borderRadius={10} src={balatro2} alt="packedaway" marginTop="10" marginBottom="10"/>
                 <Text>With that in mind, let's try to unpack the game.</Text>
-                <Text><Link color={useColorModeValue("#a6637b","#61ba68")} as="i" href="https://www.garykessler.net/library/file_sigs.html?ref=esecurityinstitute.com/">This link</Link> contains some information about file signatures - which will be extremely helpful in distinguishing between love.exe and the rest (the zip file).</Text>
+                <Text><Link color={useColorModeValue("#a6637b","#61ba68")} href="https://www.garykessler.net/library/file_sigs.html?ref=esecurityinstitute.com/">This link</Link> contains some information about file signatures - which will be extremely helpful in distinguishing between love.exe and the rest (the zip file).</Text>
                 <Text>Accordingly, the exe file will start with "\x4d\x5a" (MZ) and the zip file will usually be "\x50\x4b\x03\x04" (PK....)</Text>
                 <Text>First, we open the game's original exe file (Balatro.exe) in the hex editor to analyze.</Text>
                 <Img justifySelf="center" borderRadius={10} src={balatro3} alt="packedaway" marginTop="10" marginBottom="10"/>
