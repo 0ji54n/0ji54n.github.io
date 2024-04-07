@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp,Link,AspectRatio,Box} from "@chakra-ui/react";
+import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp,Link,Box} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
 import { motion, isValidMotionProp } from "framer-motion";
 import Giscus from '@giscus/react';
