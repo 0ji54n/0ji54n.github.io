@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp,Link,AspectRatio} from "@chakra-ui/react";
+import {Heading,Flex,useColorModeValue,Text,Grid,chakra,Img,shouldForwardProp,Link,AspectRatio,Box} from "@chakra-ui/react";
 import GoToTop from "../components/gototop";
 import { motion, isValidMotionProp } from "framer-motion";
 import Giscus from '@giscus/react';
@@ -104,13 +104,19 @@ const Content = () =>{
                 <Text marginBottom="10">Now the next step is pack the game back again. I also wrote a script to do that.</Text>
                 <Img justifySelf="center" borderRadius={10} src={code2} alt="packedaway" marginTop="10" marginBottom="10"/>
                 <Text marginTop="10">Now go to the directory that contains our patched game and run it.</Text>
-                <AspectRatio ratio={16/9} marginTop="10" marginBottom="10">
-                  <iframe
-                    title="pwned"
+                <Box
+                    marginBottom="10"
+                    marginTop="10"
+                    as='video'
+                    controls
                     src={balatro17}
-                    allowFullScreen
-                  />
-                </AspectRatio>
+                    poster=''
+                    alt='pwned'
+                    objectFit='contain'
+                    sx={{
+                      aspectRatio: '16/9'
+                    }}
+                />
                 <Text>The chips became 1337 as expected, but the money was 1340 instead of 1337 because I modified it at the wrong place. The money is also modified with the number of hands/discards left + some bonuses.</Text>
                 <Text>I test the game in the first round so there won't be any bonuses (from tarot or joker cards). So just modify the amount in case hand/discard left.</Text>
                 <Img justifySelf="center" borderRadius={10} src={balatro18} alt="balatro18" marginTop="10" marginBottom="10"/>
