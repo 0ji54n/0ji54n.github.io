@@ -1,9 +1,8 @@
 import React, {useState} from "react";
-import { Flex,Text,useColorModeValue, Grid,GridItem,Input,SimpleGrid,Box,Link,chakra, shouldForwardProp, Img, VStack} from "@chakra-ui/react";
+import {Text,Grid,GridItem,Input,SimpleGrid,Link,chakra,shouldForwardProp,VStack} from "@chakra-ui/react";
 import { Helmet } from "react-helmet";
 import balatro from "../media/balatro/thumb.jpg";
 import cyberaporev from "../media/cyberapo/lootstash2.png"
-import flareon9 from "../media/flareon9-emblem.png"
 import { motion, isValidMotionProp} from "framer-motion";
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
