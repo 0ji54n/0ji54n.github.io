@@ -28,6 +28,8 @@ import javascript from "../media/alamode/javascript.png"
 import python from "../media/alamode/python.png"
 import output from "../media/alamode/output.png"
 import decryptflag2 from "../media/alamode/decryptflag2.png"
+import { Helmet } from "react-helmet";
+import flareon from "../media/flareon9-emblem.png";
 
 
 
@@ -168,6 +170,31 @@ export class Alamode extends React.Component {
              exit={{
                  marginTop: 20}}
              >
+                <div>
+                    <Helmet>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
+                    <title>Flare-On 9 - à la mode</title>
+                    <meta name="author" content="0ji54n"/>
+                    <meta name="copyright" content="0ji54n"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="theme-color" content="#0d0d0d"/>
+                    <meta name="description" content="Solving this challenge with very poor experience & knowledge of .NET is never easy. But in the end, I solved it and learned a lot from it. This write-up's quality may not be good as the one made by other people who know better at .NET as well as mixed-mode assembly. But I did my best, and hopefully, you enjoy reading it."/>
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content="Flare-On 9 - à la mode"/>
+                    <meta property="og:url" content="https://0ji54n.space/works/flareon9/06"/>
+                    <meta property="og:site_name" content="0ji54n"/>
+                    <meta property="og:description" content="Solving this challenge with very poor experience & knowledge of .NET is never easy. But in the end, I solved it and learned a lot from it. This write-up's quality may not be good as the one made by other people who know better at .NET as well as mixed-mode assembly. But I did my best, and hopefully, you enjoy reading it."/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:image" content={flareon}/>
+                    <meta property="article:author" content="0ji54n"/>
+                    <meta property="article:tag" content="reverse engineering"/>
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:image" content={flareon}/>
+                    <link rel="canonical" href="https://0ji54n.space/works/flareon9/06"/>
+                    </Helmet>
+                </div>
                 <GoToTop/>
                 <Title/>
                 <Content/>

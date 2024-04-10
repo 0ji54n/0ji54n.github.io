@@ -16,6 +16,8 @@ import firstdebugresponse from "../media/t8/firstdebugresponse.jpg"
 import correctrequestdata from "../media/t8/correctrequestdata.jpg"
 import program from "../media/t8/program.png"
 import winner from "../media/t8/winner.jpg"
+import { Helmet } from "react-helmet";
+import flareon from "../media/flareon9-emblem.png";
 
 
 const ChakraBox = chakra(motion.div, {
@@ -125,6 +127,31 @@ export class T8 extends React.Component{
              exit={{
                  marginTop: 20}}
              >
+                <div>
+                    <Helmet>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
+                    <title>Flare-On 9 - T8</title>
+                    <meta name="author" content="0ji54n"/>
+                    <meta name="copyright" content="0ji54n"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="theme-color" content="#0d0d0d"/>
+                    <meta name="description" content="Extract the zip file, this time we get an exe file and a pcap file. The pcap file contains network traffic info so the best choice when we choose a program to open it is Wireshark for now."/>
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content="Flare-On 9 - T8"/>
+                    <meta property="og:url" content="https://0ji54n.space/works/flareon9/05"/>
+                    <meta property="og:site_name" content="0ji54n"/>
+                    <meta property="og:description" content="Extract the zip file, this time we get an exe file and a pcap file. The pcap file contains network traffic info so the best choice when we choose a program to open it is Wireshark for now."/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:image" content={flareon}/>
+                    <meta property="article:author" content="0ji54n"/>
+                    <meta property="article:tag" content="reverse engineering"/>
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:image" content={flareon}/>
+                    <link rel="canonical" href="https://0ji54n.space/works/flareon9/05"/>
+                    </Helmet>
+                </div>
             <GoToTop/>
             <Title/>
             <Content/>

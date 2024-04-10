@@ -15,6 +15,9 @@ import ebptable from "../media/darnmice/ebptable.jpg"
 import program from "../media/darnmice/program.png"
 import output from "../media/darnmice/output.jpg"
 import winner from "../media/darnmice/winner.jpg"
+import { Helmet } from "react-helmet";
+import flareon from "../media/flareon9-emblem.png";
+
 const ChakraBox = chakra(motion.div, {
     shouldForwardProp: (prop) => isValidMotionProp(prop) || shouldForwardProp(prop),
 });
@@ -132,6 +135,31 @@ export class DarnMice extends React.Component{
              exit={{
                  marginTop: 20}}
              >
+                <div>
+                    <Helmet>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
+                    <title>Flare-On 9 - darn_mice</title>
+                    <meta name="author" content="0ji54n"/>
+                    <meta name="copyright" content="0ji54n"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="theme-color" content="#0d0d0d"/>
+                    <meta name="description" content="Again, extract the file with the flare password."/>
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content="Flare-On 9 - darn_mice"/>
+                    <meta property="og:url" content="https://0ji54n.space/works/flareon9/04"/>
+                    <meta property="og:site_name" content="0ji54n"/>
+                    <meta property="og:description" content="Again, extract the file with the flare password."/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:image" content={flareon}/>
+                    <meta property="article:author" content="0ji54n"/>
+                    <meta property="article:tag" content="reverse engineering"/>
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:image" content={flareon}/>
+                    <link rel="canonical" href="https://0ji54n.space/works/flareon9/04"/>
+                    </Helmet>
+                </div>
                 <GoToTop/>
                 <Title/>
                 <Content/>

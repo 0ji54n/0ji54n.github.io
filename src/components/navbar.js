@@ -2,7 +2,7 @@ import { Grid, GridItem, IconButton, Flex, Tooltip, SimpleGrid, chakra, shouldFo
 import React from "react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import Avt from "./avt"
-import { BiHomeCircle, BiUser, BiFolderOpen, BiImage } from "react-icons/bi";
+import { BiHomeCircle, BiUser, BiFolderOpen, BiDetail  } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { FiGithub, FiTwitter, FiFacebook } from "react-icons/fi";
 import Clock from "./Cock";
@@ -70,7 +70,7 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="CTF" fontFamily="Calibri Light"
+                    <Tooltip label="Folder" fontFamily="Calibri Light"
                     borderRadius="full">
                     <Link to="works">
                       <IconButton variant="ghost" icon={<BiFolderOpen/>}
@@ -85,10 +85,10 @@ const Inner1 = () =>{
                     <ChakraBox
                     whileHover={{scale:1.1}}
                     whileTap={{scale:0.9}}>
-                    <Tooltip label="..." fontFamily="Calibri Light"
+                    <Tooltip label="Post" fontFamily="Calibri Light"
                     borderRadius="full">
-                    <Link to="gallery">
-                      <IconButton variant="ghost" icon={<BiImage/>}
+                    <Link to="posts">
+                      <IconButton variant="ghost" icon={<BiDetail/>}
                       _hover={{
                         bgColor : 'rgba(52, 52, 52, 0.2)'
                       }}

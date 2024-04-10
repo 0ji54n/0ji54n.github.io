@@ -9,6 +9,8 @@ import pressarrow from "../media/magic8ball/pressarrowkeytoshaketheball.jpg"
 import UDLR from "../media/magic8ball/UDLR.jpg"
 import winner from "../media/magic8ball/winner.jpg"
 import { motion, isValidMotionProp } from "framer-motion";
+import { Helmet } from "react-helmet";
+import flareon from "../media/flareon9-emblem.png";
 
 
 const ChakraBox = chakra(motion.div, {
@@ -105,6 +107,31 @@ export class Magic8Ball extends React.Component {
              exit={{
                  marginTop: 20}}
              >
+                <div>
+                    <Helmet>
+                    <meta charset="UTF-8"/>
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"/>
+                    <title>Flare-On 9 - Magic 8 Ball</title>
+                    <meta name="author" content="0ji54n"/>
+                    <meta name="copyright" content="0ji54n"/>
+                    <meta name="format-detection" content="telephone=no"/>
+                    <meta name="theme-color" content="#0d0d0d"/>
+                    <meta name="description" content="Extract the zip file with the password flare again. And this time we get a folder, an exe file, and a bunch of dlls."/>
+                    <meta property="og:type" content="article"/>
+                    <meta property="og:title" content="Flare-On 9 - Magic 8 Ball"/>
+                    <meta property="og:url" content="https://0ji54n.space/works/flareon9/03"/>
+                    <meta property="og:site_name" content="0ji54n"/>
+                    <meta property="og:description" content="Extract the zip file with the password flare again. And this time we get a folder, an exe file, and a bunch of dlls."/>
+                    <meta property="og:locale" content="en_US"/>
+                    <meta property="og:image" content={flareon}/>
+                    <meta property="article:author" content="0ji54n"/>
+                    <meta property="article:tag" content="reverse engineering"/>
+                    <meta name="twitter:card" content="summary"/>
+                    <meta name="twitter:image" content={flareon}/>
+                    <link rel="canonical" href="https://0ji54n.space/works/flareon9/03"/>
+                    </Helmet>
+                </div>
                 <GoToTop/>
                 <Title/>
                 <Content/>
