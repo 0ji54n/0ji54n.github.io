@@ -1,5 +1,18 @@
-import React from "react";
-import {Flex,Grid,GridItem,SimpleGrid, Text, Highlight,Input,Box} from "@chakra-ui/react"
+import React,{useState} from "react";
+import {Flex,Grid,GridItem,SimpleGrid, Text, Highlight,Input,Box,IconButton} from "@chakra-ui/react"
+import { Link } from "react-router-dom";
+import {AiFillFileText} from "react-icons/ai";
+
+const FolderName = [
+    {
+        "name" : "CyberApo_Rev",
+        "link" : "./cyberaporev"
+    },
+    {
+        "name" : "Balatro",
+        "link" : "./balatro"
+    }
+]
 
 const DolphinTer = () => {
     return (
@@ -23,9 +36,14 @@ const DolphinTer = () => {
     )
 }
 const Dolphin = () => {
+    const [inputText, setInputText] = useState("");
+    let inputHandler = (e) => {
+      var lowerCase = e.target.value.toLowerCase();
+      setInputText(lowerCase);
+    };
     return (
         <Flex justifyContent="center" marginTop = "10" marginBottom = "10">
-            <Grid bgColor="#333F50" h={550} border="1px"
+            <Grid bgColor="#333F50" h={700} border="1px"
             w={{
                 base:"90%",
                 sm:"90%",
@@ -42,7 +60,8 @@ const Dolphin = () => {
                     inputMode="search"
                     focusBorderColor="gray.900"
                     bgColor="gray.800" 
-                    fontFamily="Hack"/>
+                    fontFamily="Hack"
+                    onChange={inputHandler}/>
                 </GridItem>
                 <GridItem
                 colStart="2" colEnd="24"
@@ -55,6 +74,31 @@ const Dolphin = () => {
                         lg:3,
                         xl:3,
                     }}>
+                        {
+                        FolderName.filter(item =>{
+                            if (inputText === ""){
+                                return item;
+                            }
+                            else if (item.name.toLowerCase().includes(inputText.toLowerCase())){
+                                return item;
+                            }    
+                            return false;
+                        }).map((item, index) => (
+                            <Box margin="10" key={index}>
+                            <Link to={item.link}>
+                                <IconButton
+                                _hover={{
+                                    bgColor : 'rgba(52, 52, 52, 0.2)'
+                                  }}
+                                  colorScheme='rgba(52, 52, 52, 0.2)'
+                                boxSize="20"
+                                variant="ghost"
+                                icon={<AiFillFileText size="80"/>}/>
+                            </Link>
+                            <Text fontFamily="Hack">{item.name}</Text>
+                            </Box>
+                        ))
+                        }
                     </SimpleGrid>
                 </GridItem> 
             </Grid>
@@ -62,7 +106,7 @@ const Dolphin = () => {
     )
 }
 
-export class NewFolder extends React.Component {
+export class Another extends React.Component {
     render(){
         return(
             <Box>

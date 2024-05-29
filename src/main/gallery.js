@@ -13,13 +13,13 @@ const PostList = [
         "title":"Balatro - Playing around with Love2D game",
         "thumb":balatro,
         "description":"Recently I found Balatro - a Poker (actually Big Two) - based card game. I'm usually not good at all types of video games, and with curiosity, I decided to find out how this game was made.",
-        "link":"works/balatro"
+        "link":"works/another/balatro"
     },
     {
         "title":"Cyber Apocalypse 2024's writeup",
         "thumb":cyberaporev,
         "description":"Đây là năm đầu tiên mình tham gia Cyber Apocalypse, theo đánh giá chung thì khá dễ thở với mức chênh lệch số điểm giữa các challenge dễ khó khác nhau là không nhiều. Vì tham gia một mình nên mình phải làm toàn bộ các danh mục để kiếm được nhiều điểm nhất có thể, nhưng trong đó vẫn tập trung vào 3 thứ mình dành thời gian nhiều nhất: rev, pwn và crypto.",
-        "link":"works/cyberaporev"
+        "link":"works/another/cyberaporev"
     }
 ]
 

@@ -11,7 +11,7 @@ import {Works} from "./main/works"
 import {Post} from "./main/gallery.js"
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import { FlareOn9 } from './main/flareon9.js';
-import { NewFolder } from './main/newfolder.js';
+import { Another } from './main/newfolder.js';
 import {WhatIsFlareOn} from "./main/whatisflareon";
 import {Flaredle} from "./main/flaredle";
 import {PixelPoker} from "./main/pixelpoker"
@@ -35,7 +35,7 @@ function App() {
           <Route path="/works/" element={<Works/>} />
           <Route path="/posts/" element={<Post/>} />    
           <Route path="works/flareon9" element={<FlareOn9/>}/>  
-          <Route path="works/newfolder" element={<NewFolder/>}/>  
+          <Route path="works/another" element={<Another/>}/>  
           <Route path="works/flareon9/readme" element={<WhatIsFlareOn/>}/> 
           <Route path="works/flareon9/01" element={<Flaredle/>}/>
           <Route path="works/flareon9/02" element={<PixelPoker/>}/>
@@ -44,8 +44,8 @@ function App() {
           <Route path="works/flareon9/05" element={<T8/>}/>
           <Route path="works/flareon9/06" element={<Alamode/>}/>
           <Route path="works/flareon9/07" element={<Anode/>}/>
-          <Route path="works/cyberaporev" element={<CYBERAPO_REV/>}/>
-          <Route path="works/balatro" element={<Balatro/>}/>
+          <Route path="works/another/cyberaporev" element={<CYBERAPO_REV/>}/>
+          <Route path="works/another/balatro" element={<Balatro/>}/>
         </Routes>
       </Router> 
     </ChakraProvider>

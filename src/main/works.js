@@ -10,16 +10,8 @@ const FolderName = [
         "link" : "./flareon9"
     },
     {
-        "name" : "CyberApo_Rev",
-        "link" : "./cyberaporev"
-    },
-    {
-        "name" : "Balatro",
-        "link" : "./balatro"
-    },
-    {
-        "name" : "New Folder",
-        "link" : "./newfolder"
+        "name" : "Other",
+        "link" : "./another"
     }
 ]
 
